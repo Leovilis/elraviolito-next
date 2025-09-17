@@ -45,7 +45,7 @@ export default function ProductosDestacados() {
     <section id="productos" className="py-20 bg-gradient-to-br from-cream to-pasta">
       <div className="container mx-auto px-6">
         <h2 className="section-title">Nuestros Productos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {productos.map((producto, index) => (
             <Link
               key={index}
