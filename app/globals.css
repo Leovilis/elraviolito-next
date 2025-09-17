@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F5F5DC;
+  --color-pasta: #E6D7B7;
+  --color-tomato: #DC143C;
+  --color-herbs: #228B22;
+  
+  --font-family-script: 'Dancing Script', cursive;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: #1f2937;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pasta-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.pasta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.btn-primary {
+  background-color: var(--color-tomato);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #b91c1c;
+}
+
+.section-title {
+  font-family: var(--font-family-script);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: var(--color-tomato);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--color-pasta), var(--color-cream));
+}
+
+.cream-gradient {
+  background: linear-gradient(135deg, var(--color-cream), var(--color-pasta));
+}
