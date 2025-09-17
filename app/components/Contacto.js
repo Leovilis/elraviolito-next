@@ -6,7 +6,7 @@ export default function Contacto() {
       <div className="container mx-auto px-6">
         <h2 className="section-title">Contáctanos</h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:ml-52">
           {/* Información de contacto */}
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
@@ -41,7 +41,7 @@ export default function Contacto() {
           </div>
 
           {/* Formulario de contacto */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          {/* <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="font-semibold text-xl mb-6">Envíanos un mensaje</h3>
             <form className="space-y-6">
               <div>
@@ -81,7 +81,7 @@ export default function Contacto() {
                 Enviar Mensaje
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { MapPin, Phone, Clock, ChefHat } from 'lucide-react'
-import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -15,11 +14,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-tomato" />
-                <span>San Salvador de Jujuy, Argentina</span>
+                <span>Saavedra 202 Barrio 9 de julio, Palpalá, Jujuy</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-tomato" />
-                <span>388-123-4567</span>
+                <span>388-4536901</span>
               </div>
             </div>
           </div>
@@ -31,25 +30,12 @@ export default function Footer() {
               <span>Horarios</span>
             </h3>
             <div className="space-y-2 text-gray-300">
-              <p>Lunes a Viernes: 9:00 - 19:00</p>
-              <p>Sábados: 9:00 - 15:00</p>
-              <p>Domingos: Cerrado</p>
-            </div>
-          </div>
-
-          {/* Enlaces */}
-          <div>
-            <h3 className="font-semibold text-xl mb-4">Productos</h3>
-            <div className="space-y-2 text-gray-300">
-              <p><Link href="/sorrentinos" className="hover:text-tomato transition-colors">Sorrentinos</Link></p>
-              <p><Link href="/ravioles" className="hover:text-tomato transition-colors">Ravioles</Link></p>
-              <p><Link href="/#historia" className="hover:text-tomato transition-colors">Nuestra Historia</Link></p>
+              <p>Todos los dias de 9:00 - 14:00</p>
             </div>
           </div>
         </div>
-
         <div className="border-t border-gray-700 pt-8 mt-8 text-center text-gray-400">
-          <p>&copy; 2024 El Raviolito. Todos los derechos reservados.</p>
+          <p>&copy; 2025 El Raviolito, Palpalá. Todos los derechos reservados.</p>
           <p className="mt-2 font-script text-tomato">Tradición familiar desde 1974</p>
         </div>
       </div>
