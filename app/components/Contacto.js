@@ -22,7 +22,7 @@ export default function Contacto() {
               <Phone className="h-6 w-6 text-tomato mt-1" />
               <div>
                 <h3 className="font-semibold text-lg mb-2">Teléfono</h3>
-                <p className="text-gray-600">388-123-4567</p>
+                <p className="text-gray-600">388-4536901</p>
                 <p className="text-sm text-gray-500 mt-1">WhatsApp disponible</p>
               </div>
             </div>

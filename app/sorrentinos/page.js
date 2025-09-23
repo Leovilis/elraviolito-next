@@ -1,26 +1,30 @@
-import { Utensils, Clock, Users, Star } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
+import { Utensils, Clock, Users, Star } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import WhatsAppButton from "../components/WhatsAppButton"; // Ajusta la ruta según tu estructura
+
 export default function Sorrentinos() {
   const tiempoCoccion = "5-7 min";
   const sorrentinos = [
     {
       id: 1,
       nombre: "Sorrentinos de Ricota y Espinaca",
-      descripcion: "Clásicos sorrentinos rellenos de ricota fresca y espinaca, con masa casera dorada.",
+      descripcion:
+        "Clásicos sorrentinos rellenos de ricota fresca y espinaca, con masa casera dorada.",
       precio: "12 unidades",
       imagen: "/sorrentinos-ricota.jpg",
       ingredientes: ["Ricota", "Espinaca", "Huevo", "Queso parmesano"],
-      tiempoCoccion: tiempoCoccion
+      tiempoCoccion: tiempoCoccion,
     },
     {
       id: 2,
       nombre: "Sorrentinos de Jamón y Queso",
-      descripcion: "Deliciosos sorrentinos rellenos de jamón cocido y queso, perfectos para toda la familia.",
+      descripcion:
+        "Deliciosos sorrentinos rellenos de jamón cocido y queso, perfectos para toda la familia.",
       precio: "12 unidades",
       imagen: "/sorrentinos-jamon.jpg",
       ingredientes: ["Jamón cocido", "Queso mozzarella", "Ricota", "Especias"],
-      tiempoCoccion: tiempoCoccion
+      tiempoCoccion: tiempoCoccion,
     },
     {
       id: 3,
@@ -29,18 +33,19 @@ export default function Sorrentinos() {
       precio: "12 unidades",
       imagen: "/sorrentinos-verdura.jpg",
       ingredientes: ["Acelga", "Cebolla", "Zanahoria", "Ricota", "Hierbas"],
-      tiempoCoccion: tiempoCoccion
+      tiempoCoccion: tiempoCoccion,
     },
     {
       id: 4,
       nombre: "Sorrentinos de Pollo y Verdeo",
-      descripcion: "Tiernos trozos de pollo con verdeo fresco, una combinación irresistible.",
-      precio: "12 unidades", 
+      descripcion:
+        "Tiernos trozos de pollo con verdeo fresco, una combinación irresistible.",
+      precio: "12 unidades",
       imagen: "/sorrentinos-pollo.jpg",
       ingredientes: ["Pollo", "Cebolla de verdeo", "Ricota", "Perejil"],
-      tiempoCoccion: tiempoCoccion
-    }
-  ]
+      tiempoCoccion: tiempoCoccion,
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -52,8 +57,9 @@ export default function Sorrentinos() {
               Sorrentinos
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Nuestros sorrentinos son una tradición familiar que se remonta a 1974. 
-              Cada pieza está elaborada artesanalmente con ingredientes frescos y mucho amor.
+              Nuestros sorrentinos son una tradición familiar que se remonta a
+              1974. Cada pieza está elaborada artesanalmente con ingredientes
+              frescos y mucho amor.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
@@ -87,7 +93,7 @@ export default function Sorrentinos() {
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
                     <h3 className="text-2xl font-bold text-gray-800 flex-1">
@@ -108,7 +114,9 @@ export default function Sorrentinos() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Ingredientes:</h4>
+                      <h4 className="font-semibold text-gray-800 mb-2">
+                        Ingredientes:
+                      </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         {sorrentino.ingredientes.map((ingrediente, index) => (
                           <li key={index} className="flex items-center gap-2">
@@ -126,14 +134,15 @@ export default function Sorrentinos() {
                           Cocción: {sorrentino.tiempoCoccion}
                         </span>
                       </div>
-                      
+
                       <div className="text-right">
                         <div className="text-2xl font-bold text-tomato mb-2">
                           {sorrentino.precio}
                         </div>
-                        <Link href="#"><button className="btn-primary w-full sm:w-auto">
-                          Consultar Precio
-                        </button>
+                        <Link href="#">
+                          <button className="btn-primary w-full sm:w-auto">
+                            Consultar Precio
+                          </button>
                         </Link>
                       </div>
                     </div>
@@ -149,7 +158,7 @@ export default function Sorrentinos() {
       <section className="py-16 bg-gradient-to-br from-cream to-pasta">
         <div className="container mx-auto px-6">
           <h2 className="section-title">¿Cómo Cocinar Nuestros Sorrentinos?</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-tomato rounded-full flex items-center justify-center mx-auto mb-4">
@@ -165,7 +174,9 @@ export default function Sorrentinos() {
               <div className="w-20 h-20 bg-tomato rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Cocina los Sorrentinos</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                Cocina los Sorrentinos
+              </h3>
               <p className="text-gray-600">
                 Cocina por 5 minutos hasta el primer hervor.
               </p>
@@ -191,13 +202,11 @@ export default function Sorrentinos() {
             ¿Listos para Disfrutar?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Nuestros sorrentinos están disponibles frescos todos los días. 
+            Nuestros sorrentinos están disponibles frescos todos los días.
             ¡Contáctanos para hacer tu pedido!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-tomato px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              WhatsApp: 388-123-4567
-            </button>
+            <WhatsAppButton />
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-tomato transition-colors">
               Ver Ubicación
             </button>
@@ -205,5 +214,5 @@ export default function Sorrentinos() {
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
 import { Utensils, Clock, Users, Star } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 export default function Ravioles() {
   const raviolesSimples = [
     {
@@ -330,9 +330,7 @@ export default function Ravioles() {
             perfectos para familias numerosas o eventos especiales.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-tomato px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              WhatsApp: 388-123-4567
-            </button>
+           <WhatsAppButton />
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-tomato transition-colors">
               Ver Ubicación
             </button>

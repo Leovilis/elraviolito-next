@@ -1,6 +1,7 @@
 import { Utensils, Clock, Users, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 
 export default function Fideos() {
   const tallarines = [
@@ -12,7 +13,7 @@ export default function Fideos() {
       precio: "X Kilo",
       imagen: "/tallarines-huevo.jpg",
       ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
-      tiempoCoccion: "3-4 min",
+      tiempoCoccion: "3-5 min",
       tipo: "Tallarín",
     },
     {
@@ -23,7 +24,7 @@ export default function Fideos() {
       precio: "X Kilo",
       imagen: "/tallarines-espinaca.jpg",
       ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
-      tiempoCoccion: "3-4 min",
+      tiempoCoccion: "3-5 min",
       tipo: "Tallarín",
     },
   ];
@@ -162,8 +163,7 @@ export default function Fideos() {
                   <div>
                     <h4 className="font-semibold">Agua Abundante</h4>
                     <p className="text-gray-600 text-sm">
-                      1 litro de agua por cada 100g de tallarines con sal
-                      gruesa.
+                      Con sal a gusto.
                     </p>
                   </div>
                 </div>
@@ -175,8 +175,8 @@ export default function Fideos() {
                   <div>
                     <h4 className="font-semibold">Hervor Fuerte</h4>
                     <p className="text-gray-600 text-sm">
-                      Agrega los tallarines cuando el agua esté hirviendo
-                      fuerte.
+                      Agrega los tallarines cuando el agua esté hirviendo.
+                      
                     </p>
                   </div>
                 </div>
@@ -186,9 +186,9 @@ export default function Fideos() {
                     <span className="text-white font-bold">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">3-4 Minutos</h4>
+                    <h4 className="font-semibold">3-5 Minutos</h4>
                     <p className="text-gray-600 text-sm">
-                      Cocina por 3-4 minutos, remueve suavemente.
+                      Cocina por 3-5 minutos, sacalos suavemente en un colador y preparalos como mas te guste.
                     </p>
                   </div>
                 </div>
@@ -227,9 +227,7 @@ export default function Fideos() {
             Campos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-tomato px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              WhatsApp: 388-123-4567
-            </button>
+            <WhatsAppButton />
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-tomato transition-colors">
               Ver Ubicación
             </button>
