@@ -19,7 +19,7 @@ export default function Ravioles() {
       nombre: "Ravioles de Verdura con Queso",
       descripcion: "Verduras frescas combinadas con queso cremoso para un sabor equilibrado.",
       precio: "2 Planchas de 96 Unidades",
-      imagen: "/ravioles-verdura-queso.jpg",
+      imagen: "/ravioles-queso.jpg",
       ingredientes: ["Verduras", "Queso cremoso", "Ricota", "Especias"],
       tiempoCoccion: "6-8 min",
       categoria: "Simple"
@@ -29,7 +29,7 @@ export default function Ravioles() {
       nombre: "Ravioles de Verdura con Ricota",
       descripcion: "Mezcla perfecta de verduras frescas con ricota cremosa y suave.",
       precio: "2 Planchas de 96 Unidades",
-      imagen: "/ravioles-verdura-ricota.jpg",
+      imagen: "/ravioles-ricota.jpg",
       ingredientes: ["Verduras", "Ricota", "Huevo", "Perejil"],
       tiempoCoccion: "6-8 min",
       categoria: "Simple"
@@ -39,7 +39,7 @@ export default function Ravioles() {
       nombre: "Ravioles de Verdura con Pollo",
       descripcion: "Verduras combinadas con tierno pollo desmenuzado, nutritivo y delicioso.",
       precio: "2 Planchas de 96 Unidades",
-      imagen: "/ravioles-verdura-pollo.jpg",
+      imagen: "/ravioles-pollo.jpg",
       ingredientes: ["Verduras", "Pollo", "Cebolla", "Hierbas"],
       tiempoCoccion: "7-9 min",
       categoria: "Simple"
@@ -292,7 +292,7 @@ export default function Ravioles() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Agua Hirviendo</h3>
               <p className="text-gray-600">
-                Coloca abundante agua con sal a fuego fuerte hasta que hierva.
+                Coloca abundante agua con sal a gusto y fuego fuerte.
               </p>
             </div>
 
@@ -302,7 +302,7 @@ export default function Ravioles() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Cocina los Ravioles</h3>
               <p className="text-gray-600">
-                Agrega los ravioles y cocina por 6-9 minutos hasta que floten.
+                Agrega los ravioles el agua caliente y cocina por 5 minutos hasta el primer hervor.
               </p>
             </div>
 
@@ -312,7 +312,7 @@ export default function Ravioles() {
               </div>
               <h3 className="text-xl font-semibold mb-3">¡Listo para Servir!</h3>
               <p className="text-gray-600">
-                Escurre y sirve con tu salsa preferida. ¡Buen provecho!
+                En un colador escurrí el agua y serví con tu salsa favorita. ¡Buen provecho!
               </p>
             </div>
           </div>
@@ -323,7 +323,7 @@ export default function Ravioles() {
       <section className="py-16 bg-tomato text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-script text-4xl md:text-5xl mb-6">
-            192 Ravioles Frescos
+            Ravioles Frescos de El Raviolito
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Nuestros ravioles vienen en 2 planchas de 96 unidades cada una, 

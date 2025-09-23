@@ -2,6 +2,7 @@ import { Utensils, Clock, Users, Star } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function Sorrentinos() {
+  const tiempoCoccion = "5-7 min";
   const sorrentinos = [
     {
       id: 1,
@@ -10,7 +11,7 @@ export default function Sorrentinos() {
       precio: "12 unidades",
       imagen: "/sorrentinos-ricota.jpg",
       ingredientes: ["Ricota", "Espinaca", "Huevo", "Queso parmesano"],
-      tiempoCoccion: "8-10 min"
+      tiempoCoccion: tiempoCoccion
     },
     {
       id: 2,
@@ -19,7 +20,7 @@ export default function Sorrentinos() {
       precio: "12 unidades",
       imagen: "/sorrentinos-jamon.jpg",
       ingredientes: ["Jamón cocido", "Queso mozzarella", "Ricota", "Especias"],
-      tiempoCoccion: "8-10 min"
+      tiempoCoccion: tiempoCoccion
     },
     {
       id: 3,
@@ -28,7 +29,7 @@ export default function Sorrentinos() {
       precio: "12 unidades",
       imagen: "/sorrentinos-verdura.jpg",
       ingredientes: ["Acelga", "Cebolla", "Zanahoria", "Ricota", "Hierbas"],
-      tiempoCoccion: "8-10 min"
+      tiempoCoccion: tiempoCoccion
     },
     {
       id: 4,
@@ -37,7 +38,7 @@ export default function Sorrentinos() {
       precio: "12 unidades", 
       imagen: "/sorrentinos-pollo.jpg",
       ingredientes: ["Pollo", "Cebolla de verdeo", "Ricota", "Perejil"],
-      tiempoCoccion: "10-12 min"
+      tiempoCoccion: tiempoCoccion
     }
   ]
 
@@ -166,7 +167,7 @@ export default function Sorrentinos() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Cocina los Sorrentinos</h3>
               <p className="text-gray-600">
-                Cocina por 8-12 minutos hasta que floten en la superficie.
+                Cocina por 5 minutos hasta el primer hervor.
               </p>
             </div>
 
