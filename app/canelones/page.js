@@ -1,46 +1,58 @@
-import { Utensils, Clock, Users, Star } from 'lucide-react'
+import { Utensils, Clock, Users, Star, Package, Clock1, Clock10, Clock5, Factory, FlameIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 
 export default function Canelones() {
+  const precio = "$7000";
+  const tiempoCoccion = "15-20 min (horno)"
   const canelones = [
     {
       id: 1,
       nombre: "Canelones de Verdura",
       descripcion: "Canelones rellenos de verduras frescas de estación, una opción saludable y deliciosa.",
-      precio: "12 Unidades",
+      precio: precio,
       imagen: "/canelones-verdura.jpg",
       ingredientes: ["Acelga", "Espinaca", "Cebolla", "Ricota", "Especias"],
-      tiempoCoccion: "15-20 min (horno)",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Verdura"
     },
     {
       id: 2,
       nombre: "Canelones de Verdura con Queso",
       descripcion: "Verduras frescas combinadas con queso cremoso para un sabor equilibrado y nutritivo.",
-      precio: "12 Unidades",
+      precio: precio,
       imagen: "/canelones-verdura-queso.jpg",
       ingredientes: ["Verduras", "Queso cremoso", "Ricota", "Mozzarella", "Especias"],
-      tiempoCoccion: "15-20 min (horno)",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Verdura"
     },
     {
       id: 3,
       nombre: "Canelones de Verdura con Ricota",
       descripcion: "Mezcla perfecta de verduras frescas con ricota cremosa, suave al paladar.",
-      precio: "12 Unidades",
+      precio: precio,
       imagen: "/canelones-verdura-ricota.jpg",
       ingredientes: ["Verduras", "Ricota", "Huevo", "Perejil", "Nuez moscada"],
-      tiempoCoccion: "15-20 min (horno)",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Verdura"
     },
     {
       id: 4,
       nombre: "Canelones de Verdura con Pollo",
       descripcion: "Verduras combinadas con tierno pollo desmenuzado, una combinación nutritiva y sabrosa.",
-      precio: "12 Unidades",
+      precio: precio,
       imagen: "/canelones-verdura-pollo.jpg",
+      ingredientes: ["Verduras", "Pollo", "Cebolla", "Zanahoria", "Hierbas"],
+      tiempoCoccion: tiempoCoccion,
+      categoria: "Verdura"
+    },
+    {
+      id: 5,
+      nombre: "Canelones de Verdura con Carne",
+      descripcion: "Verduras combinadas con tierno pollo desmenuzado, una combinación nutritiva y sabrosa.",
+      precio: precio,
+      imagen: "/canelones-verdura-carne.jpg",
       ingredientes: ["Verduras", "Pollo", "Cebolla", "Zanahoria", "Hierbas"],
       tiempoCoccion: "18-22 min (horno)",
       categoria: "Verdura"
@@ -62,16 +74,16 @@ export default function Canelones() {
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Clock className="w-5 h-5 text-tomato" />
+                <Package className="w-5 h-5 text-tomato" />
                 <span>12 unidades</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Utensils className="w-5 h-5 text-tomato" />
+                <Clock1 className="w-5 h-5 text-tomato" />
                 <span>Para hornear</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Users className="w-5 h-5 text-tomato" />
-                <span>Perfectos para gratinar</span>
+                <FlameIcon className="w-5 h-5 text-tomato" />
+                <span>Perfectos para Gratinar</span>
               </div>
             </div>
           </div>
@@ -242,9 +254,6 @@ export default function Canelones() {
             en familia. Listos para hornear con tu toque personal.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* <button className="bg-white text-tomato px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              WhatsApp: 388-4536901
-            </button> */}
             <WhatsAppButton />
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-tomato transition-colors">
               Ver Ubicación

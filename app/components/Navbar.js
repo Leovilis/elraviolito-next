@@ -10,8 +10,12 @@ export default function Navbar() {
     { name: 'Inicio', href: '/' },
     { name: 'Sorrentinos', href: '/sorrentinos' },
     { name: 'Ravioles', href: '/ravioles' },
+    { name: 'Canelones', href: '/canelones' },
+    { name: 'Capeletis', href: '/capeletis' },
+    { name: 'Fideos', href: '/fideos' },
+    { name: 'Ñoquis', href: '/noquis' },
     { name: 'Historia', href: '/#historia' },
-    { name: 'Contacto', href: '/#contacto' }
+    { name: 'Contacto', href: '/#contacto' },
   ]
 
   return (

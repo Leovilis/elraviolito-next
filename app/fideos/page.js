@@ -1,4 +1,4 @@
-import { Utensils, Clock, Users, Star } from "lucide-react";
+import { Utensils, Clock, Users, Star, LucideWheat, HandHeartIcon, LucideShoppingBag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
@@ -47,15 +47,15 @@ export default function Fideos() {
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Clock className="w-5 h-5 text-tomato" />
+                <LucideShoppingBag className="w-5 h-5 text-tomato" />
                 <span>Venta por kilo</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Utensils className="w-5 h-5 text-tomato" />
+                <HandHeartIcon className="w-5 h-5 text-tomato" />
                 <span>Elaboración diaria</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Users className="w-5 h-5 text-tomato" />
+                <LucideWheat className="w-5 h-5 text-tomato" />
                 <span>Tradición de 50 años</span>
               </div>
             </div>

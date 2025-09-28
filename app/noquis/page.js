@@ -1,4 +1,4 @@
-import { Utensils, Clock, Users, Star, Calendar } from 'lucide-react'
+import { Utensils, Clock, Users, Star, Calendar, Scale, HeartHandshakeIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
@@ -42,11 +42,11 @@ export default function Ñoquis() {
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Clock className="w-5 h-5 text-tomato" />
+                <Scale className="w-5 h-5 text-tomato" />
                 <span>Venta por kilo</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
-                <Utensils className="w-5 h-5 text-tomato" />
+                <HeartHandshakeIcon className="w-5 h-5 text-tomato" />
                 <span>Elaboración diaria</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
