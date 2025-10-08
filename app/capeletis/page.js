@@ -319,7 +319,7 @@ export default function Capeletis() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {capeletisEspeciales.map((capeleti) => (
               <div key={capeleti.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={capeleti.imagen}
                     alt={capeleti.nombre}
@@ -378,9 +378,9 @@ export default function Capeletis() {
                         <div className="text-2xl font-bold text-tomato mb-2">
                           {capeleti.precio}
                         </div>
-                        <Link href="#">
+                        <Link href="#whatsapp">
                           <button className="btn-primary w-full sm:w-auto">
-                            Consultar Precio
+                            Pedido
                           </button>
                         </Link>
                       </div>

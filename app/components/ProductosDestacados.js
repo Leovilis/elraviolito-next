@@ -13,7 +13,7 @@ export default function ProductosDestacados() {
       nombre: "Ravioles",
       descripcion:
         "2 planchas de 96 unidades. Simples y especiales con rellenos únicos",
-      imagen: "/ravioles-hero.png",
+      imagen: "/ravioles-hero.jpg",
       link: "/ravioles",
     },
     {
@@ -57,13 +57,13 @@ export default function ProductosDestacados() {
               href={producto.link}
               className="group pasta-card p-6 block"
             >
-              <div className="relative h-64 mb-4 rounded-lg overflow-hidden">
+              <div className="relative h-96 mb-4 rounded-lg overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src={producto.imagen}
                   alt={producto.nombre}
-                  className=" w-full h-76 group-hover:scale-105 transition-transform duration-300"
+                  className=" w-full h-96 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">

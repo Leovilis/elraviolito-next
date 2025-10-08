@@ -15,7 +15,7 @@ export default function Canelones() {
       imagen: "/canelones-verdura.jpg",
       ingredientes: ["Acelga", "Espinaca", "Cebolla", "Ricota", "Especias"],
       tiempoCoccion: tiempoCoccion,
-      categoria: "Verdura"
+      categoria: "Especiales"
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function Canelones() {
       imagen: "/canelones-verdura-queso.jpg",
       ingredientes: ["Verduras", "Queso cremoso", "Ricota", "Mozzarella", "Especias"],
       tiempoCoccion: tiempoCoccion,
-      categoria: "Verdura"
+      categoria: "Especiales"
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ export default function Canelones() {
       imagen: "/canelones-verdura-ricota.jpg",
       ingredientes: ["Verduras", "Ricota", "Huevo", "Perejil", "Nuez moscada"],
       tiempoCoccion: tiempoCoccion,
-      categoria: "Verdura"
+      categoria: "Especiales"
     },
     {
       id: 4,
@@ -45,17 +45,17 @@ export default function Canelones() {
       imagen: "/canelones-verdura-pollo.jpg",
       ingredientes: ["Verduras", "Pollo", "Cebolla", "Zanahoria", "Hierbas"],
       tiempoCoccion: tiempoCoccion,
-      categoria: "Verdura"
+      categoria: "Especiales"
     },
     {
       id: 5,
       nombre: "Canelones de Verdura con Carne",
       descripcion: "Verduras combinadas con tierno pollo desmenuzado, una combinación nutritiva y sabrosa.",
       precio: precio,
-      imagen: "/canelones-verdura-carne.jpg",
+      imagen: "/canelones-carne.png",
       ingredientes: ["Verduras", "Pollo", "Cebolla", "Zanahoria", "Hierbas"],
       tiempoCoccion: "18-22 min (horno)",
-      categoria: "Verdura"
+      categoria: "Especiales"
     }
   ]
 
@@ -97,7 +97,7 @@ export default function Canelones() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {canelones.map((canelon) => (
               <div key={canelon.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={canelon.imagen}
                     alt={canelon.nombre}
@@ -105,7 +105,7 @@ export default function Canelones() {
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4">
-                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-tomato text-white px-3 py-1 rounded-full text-sm font-medium">
                       {canelon.categoria}
                     </span>
                   </div>
@@ -154,9 +154,9 @@ export default function Canelones() {
                         <div className="text-2xl font-bold text-tomato mb-2">
                           {canelon.precio}
                         </div>
-                        <Link href="#">
+                        <Link href="#whatsapp">
                           <button className="btn-primary w-full sm:w-auto">
-                            Consultar Precio
+                            Pedido
                           </button>
                         </Link>
                       </div>
@@ -244,7 +244,7 @@ export default function Canelones() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-tomato text-white">
+      <section id='whatsapp'  className="py-16 bg-tomato text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-script text-4xl md:text-5xl mb-6">
             12 Canelones para Compartir

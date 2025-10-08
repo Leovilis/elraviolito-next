@@ -181,7 +181,7 @@ export default function Ravioles() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {raviolesSimples.map((raviol) => (
               <div key={raviol.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={raviol.imagen}
                     alt={raviol.nombre}

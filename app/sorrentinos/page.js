@@ -288,7 +288,7 @@ export default function Sorrentinos() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {sorrentinos.map((sorrentino) => (
               <div key={sorrentino.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={sorrentino.imagen}
                     alt={sorrentino.nombre}

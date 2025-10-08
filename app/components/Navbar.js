@@ -12,7 +12,7 @@ export default function Navbar() {
     { name: 'Ravioles', href: '/ravioles' },
     { name: 'Canelones', href: '/canelones' },
     { name: 'Capeletis', href: '/capeletis' },
-    { name: 'Fideos', href: '/fideos' },
+    { name: 'Tallarines', href: '/fideos' },
     { name: 'Ñoquis', href: '/noquis' },
     { name: 'Historia', href: '/#historia' },
     { name: 'Contacto', href: '/#contacto' },

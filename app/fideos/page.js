@@ -4,28 +4,95 @@ import Link from "next/link";
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 
 export default function Fideos() {
+  const tiempoCoccion = "5 min";
   const tallarines = [
     {
       id: 1,
       nombre: "Tallarines de Huevo",
       descripcion:
         "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
-      precio: "X Kilo",
+      precio: "$4700",
       imagen: "/tallarines-huevo.jpg",
       ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
-      tiempoCoccion: "3-5 min",
-      tipo: "Tallarín",
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Común",
     },
     {
       id: 2,
-      nombre: "Tallarines de Espinaca",
+      nombre: "Tallarines de Remolacha",
       descripcion:
         "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
-      precio: "X Kilo",
-      imagen: "/tallarines-espinaca.jpg",
+      precio: "$4700",
+      imagen: "/tallarines-remolacha.jpg",
       ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
-      tiempoCoccion: "3-5 min",
-      tipo: "Tallarín",
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
+    },
+    {
+      id: 3,
+      nombre: "Tallarines de Espinaca",
+      descripcion:
+        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+      precio: "$4700",
+      imagen: "/tallarines-espinaca.jpg",
+      ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
+    },
+    {
+      id: 4,
+      nombre: "Tallarines de Zanahoria",
+      descripcion:
+        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+      precio: "$4700",
+      imagen: "/tallarines-zanahoria.jpg",
+      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
+    },
+    {
+      id: 5,
+      nombre: "Tallarines de Harina Morada",
+      descripcion:
+        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+      precio: "$4700",
+      imagen: "/tallarines-morado.jpg",
+      ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
+    },
+    {
+      id: 6,
+      nombre: "Tallarines de Morron Ahumado",
+      descripcion:
+        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+      precio: "$4700",
+      imagen: "/tallarines-morron.jpg",
+      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
+    },
+    {
+      id: 7,
+      nombre: "Tallarines de Perejil",
+      descripcion:
+        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+      precio: "$4700",
+      imagen: "/tallarines-perejil.jpg",
+      ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
+    },
+    {
+      id: 8,
+      nombre: "Tallarines de Albahaca",
+      descripcion:
+        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+      precio: "$4700",
+      imagen: "/tallarines-albahaca.jpg",
+      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial",
     },
   ];
 
@@ -40,7 +107,7 @@ export default function Fideos() {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="font-script text-6xl md:text-7xl text-tomato mb-4">
-              Fideos
+              Tallarines y Spaguettis
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Masa fresca hecha diariamente con ingredientes de primera calidad.
@@ -70,15 +137,18 @@ export default function Fideos() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {tallarines.map((tallarin) => (
               <div key={tallarin.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={tallarin.imagen}
                     alt={tallarin.nombre}
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                   <div className="absolute top-4 right-4">
+                    <span className={`px-3 py-1 rounded-full text-sm font-medium text-white 
+                    ${
+                      tallarin.tipo === 'Común' ? 'bg-green-600' : 'bg-tomato'
+                    }`}>
                       {tallarin.tipo}
                     </span>
                   </div>
@@ -129,9 +199,9 @@ export default function Fideos() {
                         <div className="text-2xl font-bold text-tomato mb-2">
                           {tallarin.precio}
                         </div>
-                        <Link href="#">
+                        <Link href="#whatsapp">
                           <button className="btn-primary w-full sm:w-auto">
-                            Consultar Precio
+                            Pedido
                           </button>
                         </Link>
                       </div>
@@ -216,7 +286,7 @@ export default function Fideos() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-tomato text-white">
+      <section id="whatsapp"  className="py-16 bg-tomato text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-script text-4xl md:text-5xl mb-6">
             Fideos Frescos por Kilo

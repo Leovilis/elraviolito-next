@@ -4,27 +4,68 @@ import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 
 export default function Ñoquis() {
+  const tiempoCoccion = "5 min";
   const ñoquis = [
     {
       id: 1,
       nombre: "Ñoquis de Papa",
       descripcion: "Ñoquis tradicionales de papa, suaves y esponjosos, elaborados con papas frescas seleccionadas.",
-      precio: "X Kilo",
+      precio: "$4500",
       imagen: "/ñoquis-papa.jpg",
       ingredientes: ["Papa", "Harina 0000", "Huevo", "Sal"],
-      tiempoCoccion: "2-3 min",
+      tiempoCoccion: tiempoCoccion,
       tipo: "Clásico"
     },
     {
       id: 2,
-      nombre: "Ñoquis de Espinaca",
-      descripcion: "Ñoquis verdes con espinaca natural, una variación nutritiva y colorida del clásico tradicional.",
-      precio: "X Kilo",
-      imagen: "/ñoquis-espinaca.jpg",
-      ingredientes: ["Papa", "Espinaca", "Harina 0000", "Huevo", "Sal"],
-      tiempoCoccion: "2-3 min",
+      nombre: "Ñoquis de Remolacha",
+      descripcion: "Ñoquis con remolacha fresca, una variación nutritiva y colorida del clásico tradicional.",
+      precio: "$4500",
+      imagen: "/ñoquis-remolacha.jpg",
+      ingredientes: ["Remolacha", "Harina 0000", "Huevo", "Sal"],
+      tiempoCoccion: tiempoCoccion,
       tipo: "Especial"
-    }
+    },
+    {
+      id: 3,
+      nombre: "Ñoquis de Espinaca",
+      descripcion: "Ñoquis tradicionales con un toque de color, elaborados con espinaca fresca seleccionada.",
+      precio: "$4500",
+      imagen: "/ñoquis-verdura.jpg",
+      ingredientes: ["Espinaca", "Harina 0000", "Huevo", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial"
+    },
+    {
+      id: 4,
+      nombre: "Ñoquis de Zanahoria",
+      descripcion: "Ñoquis de Zanahoria, una nutritiva opción para tus comidas.",
+      precio: "$4500",
+      imagen: "/ñoquis-zanahoria.jpg",
+      ingredientes: ["Zanahoria", "Harina 0000", "Huevo", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial"
+    },
+    {
+      id: 5,
+      nombre: "Ñoquis de Harina Morada",
+      descripcion: "Ñoquis tradicionales con un toque de nuestra tierra, elaborados con harina de maíz morado que recuerda el sabor artesanal jujeño.",
+      precio: "$4500",
+      imagen: "/ñoquis-morado.jpg",
+      ingredientes: ["Harina de Maiz Morado", "Huevo", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial"
+    },
+    {
+      id: 6,
+      nombre: "Ñoquis Tricolores",
+      descripcion: "Ñoquis coloridos, con una mixtura de sabores unica. Una explosion de sabor en tu boca",
+      precio: "$4500",
+      imagen: "/ñoquis-tricolor.jpg",
+      ingredientes: ["Papa", "Espinaca", "Remolacha", "Harina 0000", "Huevo", "Sal"],
+      tiempoCoccion: tiempoCoccion,
+      tipo: "Especial"
+    },
   ]
 
   return (
@@ -38,7 +79,8 @@ export default function Ñoquis() {
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Los ñoquis más auténticos de la región, elaborados con papa fresca y la receta 
-              tradicional que nos acompaña desde 1974. Perfectos para los días 29.
+              tradicional que nos acompaña desde 1974. Perfectos para los días 29. Ñoquis coloridos, en sabor
+              y textura, una opcion única en pastas.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
@@ -65,7 +107,7 @@ export default function Ñoquis() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {ñoquis.map((ñoqui) => (
               <div key={ñoqui.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={ñoqui.imagen}
                     alt={ñoqui.nombre}
@@ -74,7 +116,7 @@ export default function Ñoquis() {
                   />
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-medium text-white ${
-                      ñoqui.tipo === 'Clásico' ? 'bg-orange-500' : 'bg-green-600'
+                      ñoqui.tipo === 'Clásico' ? 'bg-green-600' : 'bg-tomato'
                     }`}>
                       {ñoqui.tipo}
                     </span>
@@ -124,9 +166,9 @@ export default function Ñoquis() {
                         <div className="text-2xl font-bold text-tomato mb-2">
                           {ñoqui.precio}
                         </div>
-                        <Link href="#">
+                        <Link href="#whatsapp">
                           <button className="btn-primary w-full sm:w-auto">
-                            Consultar Precio
+                            Pedido
                           </button>
                         </Link>
                       </div>
@@ -244,7 +286,7 @@ export default function Ñoquis() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-tomato text-white">
+      <section id='whatsapp' className="py-16 bg-tomato text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-script text-4xl md:text-5xl mb-6">
             Fideos Frescos por Kilo
