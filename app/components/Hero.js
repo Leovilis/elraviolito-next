@@ -13,10 +13,10 @@ export default function Hero() {
         <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
           <Link href="#productos">
             {" "}
-            <button className="btn-primary">Ver Nuestros Productos</button>
+            <button className="btn-primary mb-5">Ver Nuestros Productos</button>
           </Link>
           <Link href="#historia">
-            <button className="border-2 border-tomato text-tomato px-6 py-3 rounded-lg font-semibold hover:bg-tomato hover:text-white transition-all duration-300">
+            <button className="border-2 border-tomato text-tomato px-6 py-2.5 rounded-lg font-semibold hover:bg-tomato hover:text-white transition-all duration-300">
               Conocer Nuestra Historia
             </button>
           </Link>
