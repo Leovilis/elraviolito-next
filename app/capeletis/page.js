@@ -299,7 +299,7 @@ export default function Capeletis() {
                         </div>
                         <Link href="#">
                           <button className="btn-primary w-full sm:w-auto">
-                            Consultar Precio
+                            Pedido
                           </button>
                         </Link>
                       </div>

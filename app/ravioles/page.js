@@ -53,7 +53,7 @@ export default function Ravioles() {
       nombre: "Ravioles de Verdura y Carne",
       descripcion: "Verduras combinadas con tierno pollo desmenuzado, nutritivo y delicioso.",
       precio: "$4300",
-      imagen: "/ravioles-pollo.jpg",
+      imagen: "/ravioles-carne.jpg",
       ingredientes: ["Acelga", "Picadillo de Carne", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: "3-5 min",
       categoria: "Simple"
@@ -318,7 +318,7 @@ export default function Ravioles() {
                         </div>
                         <Link href="#whatsapp">
                           <button className="btn-primary w-full sm:w-auto">
-                            Consultar Precio
+                            Pedido
                           </button>
                         </Link>
                       </div>
