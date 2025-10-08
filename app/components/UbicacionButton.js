@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 
 export default function UbicacionButton() {
   const handleClick = () => {
-    window.open('https://maps.app.goo.gl/uhVGyoBR1QEM3pRn7', '_blank');
+    window.open('https://maps.app.goo.gl/RbfkY5RjM19MJ7hV7', '_blank');
   };
 
   return (
