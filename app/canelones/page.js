@@ -2,6 +2,7 @@ import { Utensils, Clock, Users, Star, Package, Clock1, Clock10, Clock5, Factory
 import Image from 'next/image'
 import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
+import UbicacionButton from '../components/UbicacionButton';
 
 export default function Canelones() {
   const precio = "$7000";
@@ -255,9 +256,7 @@ export default function Canelones() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <WhatsAppButton />
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-tomato transition-colors">
-              Ver Ubicación
-            </button>
+            <UbicacionButton />
           </div>
         </div>
       </section>
