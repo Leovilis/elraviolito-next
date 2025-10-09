@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
-import { Menu, X, ChefHat } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,9 +24,15 @@ export default function Navbar() {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <ChefHat className="h-8 w-8 text-tomato" />
-            <span className="font-script text-2xl text-tomato">El Raviolito</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.jpg"
+              alt="El Raviolito Logo"
+              width={320}
+              height={260}
+              className="h-32 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}

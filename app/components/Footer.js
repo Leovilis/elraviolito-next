@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, ChefHat, Instagram, Facebook } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,9 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Información de contacto */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <ChefHat className="h-8 w-8 text-tomato" />
-              <span className="font-script text-2xl text-tomato">El Raviolito</span>
+            <div className="mb-1">
+              <Image
+                src="/logo.jpg"
+                alt="El Raviolito Logo"
+                width={150}
+                height={75}
+                className="h-32 w-auto"
+              />
             </div>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
