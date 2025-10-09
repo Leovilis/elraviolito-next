@@ -5,7 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta seg√
 import UbicacionButton from "../components/UbicacionButton";
 
 export default function Fideos() {
-  const tiempoCoccion = "3 min";
+  const tiempoCoccion = "4 min";
   const tallarines = [
     {
       id: 1,
@@ -257,7 +257,7 @@ export default function Fideos() {
                     <span className="text-white font-bold">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">3 Minutos</h4>
+                    <h4 className="font-semibold">4 Minutos</h4>
                     <p className="text-gray-600 text-sm">
                       Cocina por {tiempoCoccion}, sacalos suavemente en un colador y preparalos como mas te guste.
                     </p>
