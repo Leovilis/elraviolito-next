@@ -310,6 +310,7 @@ export default function Sorrentinos() {
               <div key={sorrentino.id} className="pasta-card p-6">
                 <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
+                   
                     src={sorrentino.imagen}
                     alt={sorrentino.nombre}
                     fill
