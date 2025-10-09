@@ -230,7 +230,7 @@ export default function Sorrentinos() {
       id: 14,
       nombre: "Sorrentinos de Quatro Quesos",
       descripcion:
-        "Un relleno intenso donde la ricota suave, la mozzarella fundente y el azul vibrante se unen en perfecta armonía en cada bocado.",
+        "Un relleno intenso donde la ricota suave, la mozzarella fundente, el fuerte tybo y el azul vibrante se unen en perfecta armonía en cada bocado.",
       precio: esp2,
       imagen: "/sorrentinos-4quesos.jpg",
       ingredientes: [
@@ -238,6 +238,7 @@ export default function Sorrentinos() {
         "Mozzarella",
         "Roquefort",
         "Especias",
+        "Tybo",
         "Un touch de Sal",
         "Masa Fresca de El Raviolito",
       ],
