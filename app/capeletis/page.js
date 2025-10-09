@@ -5,14 +5,17 @@ import WhatsAppButton from "../components/WhatsAppButton"; // Ajusta la ruta seg
 import UbicacionButton from "../components/UbicacionButton";
 
 export default function Capeletis() {
-  const tiempoCoccion = "3 min al dente";
+  const tiempoCoccion = "3 min";
+  const simple = especial;
+  const especial = "$4700";
+  const esp2 = "$4900";
   const capeletisSimples = [
     {
       id: 1,
       nombre: "Capeletis de Verdura",
       descripcion:
         "Capeletis en forma de sombrero rellenos de verduras frescas de estación.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/capeletis-verdura.jpg",
       ingredientes: [
         "Acelga",
@@ -28,7 +31,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Verdura con Queso",
       descripcion:
         "Verduras frescas combinadas con queso cremoso en forma tradicional del capeleti.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/capeletis-verdura-y-queso.jpg",
       ingredientes: [
         "Verduras",
@@ -45,7 +48,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Verdura con Ricota",
       descripcion:
         "Mezcla perfecta de verduras frescas con ricota cremosa y suave.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/capeletis-verdura-ricota.jpg",
       ingredientes: [
         "Verduras",
@@ -62,7 +65,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Verdura y Carne",
       descripcion:
         "Mezcla perfecta de verduras frescas con ricota cremosa y suave.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/capeletis-verdura-carne.jpg",
       ingredientes: [
         "Verduras",
@@ -79,7 +82,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Verdura con Pollo",
       descripcion:
         "Verduras combinadas con tierno pollo desmenuzado, nutritivo y delicioso.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/capeletis-verdura-pollo.jpg",
       ingredientes: [
         "Verduras",
@@ -93,13 +96,13 @@ export default function Capeletis() {
     },
   ];
 
-  const capeletisEspeciales = [
+  const capeletisespecial = [
     {
       id: 6,
       nombre: "Capeletis de Ricota con Nuez",
       descripcion:
         "Ricota cremosa con nueces, una combinación gourmet sofisticada en capeleti.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/capeletis-ricota-nuez.jpg",
       ingredientes: [
         "Ricota",
@@ -116,7 +119,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Ricota con Jamón",
       descripcion:
         "Ricota suave con jamón cocido, un clásico en la tradicional forma de sombrero.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/capeletis-ricota-jamon.jpg",
       ingredientes: [
         "Ricota",
@@ -133,7 +136,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Jamón y Queso",
       descripcion:
         "La combinación perfecta de jamón y queso en capeleti, ideal para toda la familia.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/capeletis-jamon-queso.jpg",
       ingredientes: [
         "Jamón cocido",
@@ -150,7 +153,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Calabaza con Mozzarella",
       descripcion:
         "Calabaza dulce asada con queso mozzarella, un sabor suave y delicado en forma de capeleti.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/capeletis-calabaza.jpg",
       ingredientes: [
         "Calabaza",
@@ -167,7 +170,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Quatro Quesos",
       descripcion:
         "Quatro Quesos combinados en una suave masa para un exquisito sabor en forma de capeleti.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/capeletis-4quesos.jpg",
       ingredientes: [
         "Mozzarella",
@@ -186,7 +189,7 @@ export default function Capeletis() {
       nombre: "Capeletis de Batata y Queso Azul",
       descripcion:
         "Batata con un touch de Queso Azul envuelta en una suave masa, un sabor unico e innovador.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/capeletis-batata.jpg",
       ingredientes: [
         "Batata",
@@ -212,7 +215,7 @@ export default function Capeletis() {
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Los capeletis con su característica forma de sombrero vienen en
               presentaciones de 30 unidades. Ofrecemos variedades simples y
-              especiales con rellenos únicos.
+              especial con rellenos únicos.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
@@ -239,7 +242,7 @@ export default function Capeletis() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {capeletisSimples.map((capeleti) => (
               <div key={capeleti.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={capeleti.imagen}
                     alt={capeleti.nombre}
@@ -313,12 +316,12 @@ export default function Capeletis() {
         </div>
       </section>
 
-      {/* Capeletis Especiales */}
+      {/* Capeletis especial */}
       <section className="py-16 bg-gradient-to-br from-cream to-pasta">
         <div className="container mx-auto px-6">
-          <h2 className="section-title">Capeletis Especiales</h2>
+          <h2 className="section-title">Capeletis especial</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {capeletisEspeciales.map((capeleti) => (
+            {capeletisespecial.map((capeleti) => (
               <div key={capeleti.id} className="pasta-card p-6">
                 <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
@@ -444,7 +447,7 @@ export default function Capeletis() {
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Nuestros capeletis vienen en porciones perfectas de 30 unidades,
-            ideales para comidas familiares especiales.
+            ideales para comidas familiares especial.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <WhatsAppButton />

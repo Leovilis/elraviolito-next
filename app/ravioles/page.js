@@ -4,15 +4,19 @@ import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 import UbicacionButton from '../components/UbicacionButton'
 export default function Ravioles() {
+  const simple = "$4500";
+  const especial = "$4700";
+  const esp2 = "$4900";
+  const tiempoCoccion = "5 min"
   const raviolesSimples = [
     {
       id: 1,
       nombre: "Ravioles de Verdura",
       descripcion: "Ravioles rellenos de verduras frescas, saludables y sabrosos.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/ravioles-verdura.jpg",
       ingredientes: ["Acelga", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Simple"
 
     },
@@ -20,10 +24,10 @@ export default function Ravioles() {
       id: 2,
       nombre: "Ravioles de Verdura y Queso",
       descripcion: "Verdura combinada con queso cremoso para un sabor exquisito. ",
-      precio: "$4300",
+      precio: simple,
       imagen: "/ravioles-queso.jpg",
       ingredientes: ["Acelga Fresca", "Queso cremoso", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Simple"
 
     },
@@ -31,10 +35,10 @@ export default function Ravioles() {
       id: 3,
       nombre: "Ravioles de Verdura y Ricota",
       descripcion: "Mezcla perfecta de verduras frescas con ricota cremosa y suave.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/ravioles-ricota.jpg",
       ingredientes: ["Acelga Fresca", "Ricota", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Simple"
 
     },
@@ -42,10 +46,10 @@ export default function Ravioles() {
       id: 4,
       nombre: "Ravioles de Verdura y Pollo",
       descripcion: "Verdura combinada con tierno pollo desmenuzado, nutritivo y delicioso.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/ravioles-pollo.jpg",
       ingredientes: ["Acelga Fresca", "Pollo", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Simple"
 
     },
@@ -53,10 +57,10 @@ export default function Ravioles() {
       id: 5,
       nombre: "Ravioles de Verdura y Carne",
       descripcion: "Verduras combinadas con tierno pollo desmenuzado, nutritivo y delicioso.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/ravioles-carne.jpg",
       ingredientes: ["Acelga", "Picadillo de Carne", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Simple"
 
     }
@@ -67,10 +71,10 @@ export default function Ravioles() {
       id: 6,
       nombre: "Ravioles de Ricota y Nuez",
       descripcion: "Ricota cremosa con nueces, una combinación gourmet única y sofisticada.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/ravioles-ricota-nuez.jpg",
       ingredientes: ["Ricota", "Nueces", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Especial"
 
     },
@@ -78,10 +82,10 @@ export default function Ravioles() {
       id: 7,
       nombre: "Ravioles de Ricota y Jamón",
       descripcion: "Ricota suave con jamón cocido, un clásico que nunca falla.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/ravioles-ricota-jamon.jpg",
       ingredientes: ["Ricota", "Jamón cocido", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
+      tiempoCoccion: tiempoCoccion,
       categoria: "Especial"
 
     },
@@ -92,8 +96,8 @@ export default function Ravioles() {
       precio: "$4500",
       imagen: "/ravioles-jamon-queso.jpg",
       ingredientes: ["Jamón cocido", "Queso cremoso", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
-      categoria: "Especial"
+      tiempoCoccion: tiempoCoccion,
+      categoria: especial
 
     },
     {
@@ -103,8 +107,8 @@ export default function Ravioles() {
       precio: "$5000",
       imagen: "/ravioles-calabaza-muzza.jpg",
       ingredientes: ["Calabaza", "Mozzarella", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
-      categoria: "Especial"
+      tiempoCoccion: tiempoCoccion,
+      categoria: esp2
 
     },
     {
@@ -114,8 +118,8 @@ export default function Ravioles() {
       precio: "$5000",
       imagen: "/ravioles-4quesos.jpg",
       ingredientes: ["Roquefort", "Queso Creomoso", "Ricota", "Queso sardo", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
-      categoria: "Especial"
+      tiempoCoccion: tiempoCoccion,
+      categoria: esp2
     },
     {
       id: 11,
@@ -124,8 +128,8 @@ export default function Ravioles() {
       precio: "$5000",
       imagen: "/ravioles-4quesos.jpg",
       ingredientes: ["Roquefort", "Batata", "Un touch de Sal", "Masa Fresca de El Raviolito"],
-      tiempoCoccion: "3-5 min",
-      categoria: "Especial"
+      tiempoCoccion: tiempoCoccion,
+      categoria: esp2
     }
   ]
   const raviolon = [

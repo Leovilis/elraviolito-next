@@ -6,12 +6,13 @@ import UbicacionButton from '../components/UbicacionButton';
 
 export default function Ñoquis() {
   const tiempoCoccion = "5 min";
+  const simple = simple;
   const ñoquis = [
     {
       id: 1,
       nombre: "Ñoquis de Papa",
       descripcion: "Ñoquis tradicionales de papa, suaves y esponjosos, elaborados con papas frescas seleccionadas.",
-      precio: "$4500",
+      precio: simple,
       imagen: "/ñoquis-papa.jpg",
       ingredientes: ["Papa", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -21,7 +22,7 @@ export default function Ñoquis() {
       id: 2,
       nombre: "Ñoquis de Remolacha",
       descripcion: "Ñoquis con remolacha fresca, una variación nutritiva y colorida del clásico tradicional.",
-      precio: "$4500",
+      precio: simple,
       imagen: "/ñoquis-remolacha.jpg",
       ingredientes: ["Remolacha", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -31,7 +32,7 @@ export default function Ñoquis() {
       id: 3,
       nombre: "Ñoquis de Espinaca",
       descripcion: "Ñoquis tradicionales con un toque de color, elaborados con espinaca fresca seleccionada.",
-      precio: "$4500",
+      precio: simple,
       imagen: "/ñoquis-verdura.jpg",
       ingredientes: ["Espinaca", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -41,7 +42,7 @@ export default function Ñoquis() {
       id: 4,
       nombre: "Ñoquis de Zanahoria",
       descripcion: "Ñoquis de Zanahoria, una nutritiva opción para tus comidas.",
-      precio: "$4500",
+      precio: simple,
       imagen: "/ñoquis-zanahoria.jpg",
       ingredientes: ["Zanahoria", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -51,7 +52,7 @@ export default function Ñoquis() {
       id: 5,
       nombre: "Ñoquis de Harina Morada",
       descripcion: "Ñoquis tradicionales con un toque de nuestra tierra, elaborados con harina de maíz morado que recuerda el sabor artesanal jujeño.",
-      precio: "$4500",
+      precio: simple,
       imagen: "/ñoquis-morado.jpg",
       ingredientes: ["Harina de Maiz Morado", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -61,7 +62,7 @@ export default function Ñoquis() {
       id: 6,
       nombre: "Ñoquis Tricolores",
       descripcion: "Ñoquis coloridos, con una mixtura de sabores unica. Una explosion de sabor en tu boca",
-      precio: "$4500",
+      precio: simple,
       imagen: "/ñoquis-tricolor.jpg",
       ingredientes: ["Papa", "Espinaca", "Remolacha", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,

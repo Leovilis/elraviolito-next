@@ -2,16 +2,19 @@ import { Utensils, Clock, Users, Star, Wheat } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import WhatsAppButton from "../components/WhatsAppButton"; // Ajusta la ruta según tu estructura
-import UbicacionButton from "../components/UbicacionButton"; 
+import UbicacionButton from "../components/UbicacionButton";
 export default function Sorrentinos() {
-  const tiempoCoccion = "3 min al dente";
+  const tiempoCoccion = "3 min";
+  const simple = "$4500";
+  const especial = "$4700";
+  const esp2 = "$4900";
   const sorrentinos = [
     {
       id: 1,
       nombre: "Sorrentinos de Verdura y Ricota",
       descripcion:
         "Clásicos sorrentinos rellenos de ricota fresca y espinaca, con masa casera dorada.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/sorrentinos-ricota.jpg",
       ingredientes: ["Ricota", "Espinaca", "Huevo", "Queso parmesano"],
       tiempoCoccion: tiempoCoccion,
@@ -22,7 +25,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Verdura y Queso",
       descripcion:
         "Deliciosos sorrentinos rellenos de Acelga Fresca y Queso, perfectos para toda la familia.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/sorrentinos-queso.jpg",
       ingredientes: [
         "Acelga Fresca",
@@ -39,7 +42,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Verdura",
       descripcion:
         "Verduras frescas de estación envueltas en una fima masa de autentico sabor.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/sorrentinos-verdura.jpg",
       ingredientes: [
         "Acelga",
@@ -55,9 +58,14 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Pollo y Verdura",
       descripcion:
         "Tiernos trozos de pollo con Verdura fresco, una combinación irresistible.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/sorrentinos-pollo.jpg",
-      ingredientes: ["Pollo", "Cebolla de Verdura", "Ricota", "Perejil"],
+      ingredientes: [
+        "Pollo",
+        "Verdura",
+        "Un touch de Sal",
+        "Masa Fresca de El Raviolito",
+      ],
       tiempoCoccion: tiempoCoccion,
       categoria: "Simples",
     },
@@ -66,7 +74,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Verdura y Carne",
       descripcion:
         "Tiernos trozos de pollo con Verdura fresco, una combinación irresistible.",
-      precio: "$4300",
+      precio: simple,
       imagen: "/sorrentinos-carne.jpg",
       ingredientes: [
         "Acelga Fresca",
@@ -85,7 +93,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Jamon y Queso",
       descripcion:
         "Rellenos de Jamon y Queso, una combinación tan irresistible como tradicional.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/sorrentinos-jamon.jpg",
       ingredientes: [
         "Acelga Fresca",
@@ -103,7 +111,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Ricota y Jamon",
       descripcion:
         "Un irresistible relleno de Ricota fresca y Jamon Cocido, una opción para toda la família.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/sorrentinos-rico-jamon.jpg",
       ingredientes: [
         "Ricota",
@@ -120,7 +128,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Ricota y Nuéz",
       descripcion:
         "Masa fresca rellena de una ricota suave que se funde con el toque crujiente y elegante de la nuez, una caricia al paladar.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/sorrentinos-nuez.jpg",
       ingredientes: [
         "Ricota Fresca",
@@ -137,7 +145,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Batata y Queso Azul",
       descripcion:
         "Sorrentinos rellenos con Batata y Queso Azul, una combinación exquisita al paladar.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/sorrentinos-batata.jpg",
       ingredientes: [
         "Batata",
@@ -154,7 +162,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Ricota, Pollo y Almendras Tostadas",
       descripcion:
         "Tiernos trozos de pollo con Ricota fresca y una lluvia de Almendras Tostadas, una combinación única.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/sorrentinos-almendras.jpg",
       ingredientes: [
         "Pollo",
@@ -172,9 +180,15 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Habas, Queso de Cabra y Choclo",
       descripcion:
         "sorrentinos rellenos de habas tiernas, queso de cabra cremoso y granos dulces de choclo, un plato que respira autenticidad",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/sorrentinos-habas.jpg",
-      ingredientes: ["Pollo", "Cebolla de Verdura", "Ricota", "Perejil"],
+      ingredientes: [
+        "Queso de Cabra",
+        "Choclo",
+        "Habas Frescas",
+        "Un touch de Sal",
+        "Masa Fresca de El Raviolito",
+      ],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
     },
@@ -183,11 +197,11 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos Capresse",
       descripcion:
         "Una masa suave envuelve un relleno vibrante de tomates maduros, queso fresco y hojas de albahaca, armonía perfecta de sabores.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/sorrentinos-capresse.jpg",
       ingredientes: [
         "Tomates",
-        "Queso Cremoso",
+        "Queso Mozzarella",
         "Albahaca",
         "Un touch de Sal",
         "Masa Fresca de El Raviolito",
@@ -200,7 +214,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Calabaza y Mozzarella",
       descripcion:
         "La dulzura natural de la calabaza se fusiona con la suavidad cremosa de la mozzarella, en un plato moderno e innovador.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/sorrentinos-calabaza.jpg",
       ingredientes: [
         "Calabaza",
@@ -216,13 +230,12 @@ export default function Sorrentinos() {
       id: 14,
       nombre: "Sorrentinos de Quatro Quesos",
       descripcion:
-        "Un relleno intenso donde la ricota suave, la mozzarella fundente, el parmesano maduro y el azul vibrante se unen en perfecta armonía en cada bocado.",
-      precio: "$5000",
+        "Un relleno intenso donde la ricota suave, la mozzarella fundente y el azul vibrante se unen en perfecta armonía en cada bocado.",
+      precio: esp2,
       imagen: "/sorrentinos-4quesos.jpg",
       ingredientes: [
         "Ricota",
         "Mozzarella",
-        "Parmesano",
         "Roquefort",
         "Especias",
         "Un touch de Sal",
@@ -236,7 +249,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Humita",
       descripcion:
         "Inspirados en la tradicional humita andina, estos sorrentinos combinan el dulzor del choclo fresco con una crema suave que realza su sabor natural. Un plato que une la esencia ancestral del maíz con la elegancia de la pasta italiana",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/sorrentinos-humita.jpg",
       ingredientes: [
         "Choclo molido",
@@ -368,7 +381,7 @@ export default function Sorrentinos() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {sorrentinosEspeciales.map((sorrentinosEspeciales) => (
               <div key={sorrentinosEspeciales.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={sorrentinosEspeciales.imagen}
                     alt={sorrentinosEspeciales.nombre}
@@ -467,7 +480,7 @@ export default function Sorrentinos() {
                 Cocina los Sorrentinos
               </h3>
               <p className="text-gray-600">
-                Cocina por 5 minutos hasta el primer hervor.
+                Cocina por ${tiempoCoccion} hasta el primer hervor.
               </p>
             </div>
 
