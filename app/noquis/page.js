@@ -13,7 +13,7 @@ export default function Ñoquis() {
       nombre: "Ñoquis de Papa",
       descripcion: "Ñoquis tradicionales de papa, suaves y esponjosos, elaborados con papas frescas seleccionadas.",
       precio: simple,
-      imagen: "/ñoquis-papa.jpg",
+      imagen: "/noquis-papa.jpg",
       ingredientes: ["Papa", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Clásico"
@@ -23,7 +23,7 @@ export default function Ñoquis() {
       nombre: "Ñoquis de Remolacha",
       descripcion: "Ñoquis con remolacha fresca, una variación nutritiva y colorida del clásico tradicional.",
       precio: simple,
-      imagen: "/ñoquis-remolacha.jpg",
+      imagen: "/noquis-remolacha.jpg",
       ingredientes: ["Remolacha", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial"
@@ -33,7 +33,7 @@ export default function Ñoquis() {
       nombre: "Ñoquis de Espinaca",
       descripcion: "Ñoquis tradicionales con un toque de color, elaborados con espinaca fresca seleccionada.",
       precio: simple,
-      imagen: "/ñoquis-verdura.jpg",
+      imagen: "/noquis-verdura.jpg",
       ingredientes: ["Espinaca", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial"
@@ -43,7 +43,7 @@ export default function Ñoquis() {
       nombre: "Ñoquis de Zanahoria",
       descripcion: "Ñoquis de Zanahoria, una nutritiva opción para tus comidas.",
       precio: simple,
-      imagen: "/ñoquis-zanahoria.jpg",
+      imagen: "/noquis-zanahoria.jpg",
       ingredientes: ["Zanahoria", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial"
@@ -53,7 +53,7 @@ export default function Ñoquis() {
       nombre: "Ñoquis de Harina Morada",
       descripcion: "Ñoquis tradicionales con un toque de nuestra tierra, elaborados con harina de maíz morado que recuerda el sabor artesanal jujeño.",
       precio: simple,
-      imagen: "/ñoquis-morado.jpg",
+      imagen: "/noquis-morado.jpg",
       ingredientes: ["Harina de Maiz Morado", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial"
@@ -63,7 +63,7 @@ export default function Ñoquis() {
       nombre: "Ñoquis Tricolores",
       descripcion: "Ñoquis coloridos, con una mixtura de sabores unica. Una explosion de sabor en tu boca",
       precio: simple,
-      imagen: "/ñoquis-tricolor.jpg",
+      imagen: "/noquis-tricolor.jpg",
       ingredientes: ["Papa", "Espinaca", "Remolacha", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial"
