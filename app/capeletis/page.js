@@ -8,7 +8,7 @@ export default function Capeletis() {
   const tiempoCoccion = "3 min";
   const simple = "$4500";
   const especial = "$4700";
-  const esp2 = "$4900";
+  const esp2 = "$5000";
   const capeletisSimples = [
     {
       id: 1,
@@ -421,7 +421,7 @@ export default function Capeletis() {
                 Cocinar con Cuidado
               </h3>
               <p className="text-gray-600">
-                Cocina por 8-11 minutos con cuidado para mantener su forma de
+                Cocina por {tiempoCoccion} con cuidado para mantener su forma de
                 sombrero.
               </p>
             </div>

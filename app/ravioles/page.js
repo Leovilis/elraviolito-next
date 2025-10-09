@@ -7,7 +7,7 @@ export default function Ravioles() {
   const simple = "$4500";
   const especial = "$4700";
   const esp2 = "$4900";
-  const tiempoCoccion = "5 min"
+  const tiempoCoccion = "3 min"
   const raviolesSimples = [
     {
       id: 1,
@@ -56,7 +56,7 @@ export default function Ravioles() {
     {
       id: 5,
       nombre: "Ravioles de Verdura y Carne",
-      descripcion: "Verduras combinadas con tierno pollo desmenuzado, nutritivo y delicioso.",
+      descripcion: "Verduras combinadas con suave picadillo de carne.",
       precio: simple,
       imagen: "/ravioles-carne.jpg",
       ingredientes: ["Acelga", "Picadillo de Carne", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
@@ -114,10 +114,10 @@ export default function Ravioles() {
     {
       id: 10,
       nombre: "Ravioles de 4 Quesos",
-      descripcion: "Calabaza dulce asada con mozzarella, un sabor suave y delicado.",
+      descripcion: "Ravioles que combinan el exquisito sabor de 4 quesos, imperdible en tu mesa.",
       precio: "$5000",
       imagen: "/ravioles-4quesos.jpg",
-      ingredientes: ["Roquefort", "Queso Creomoso", "Ricota", "Queso sardo", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
+      ingredientes: ["Roquefort", "Queso Creomoso", "Ricota", "Queso Tybo", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: esp2
     },
@@ -137,7 +137,7 @@ export default function Ravioles() {
       id: 12,
       nombre: "Raviolon de Verdura",
       descripcion: "Raviolon relleno de acelga fresca y especias para un sabor intenso pero agradable. Pre hervido, listo para un toque de horno y a servir",
-      precio: "$5000",
+      precio: "$9000",
       imagen: "/raviolon.png",
       ingredientes: ["Acelga Fresca", "Nuez Moscada", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: "5 min",
@@ -264,7 +264,7 @@ export default function Ravioles() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {raviolesEspeciales.map((raviol) => (
               <div key={raviol.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={raviol.imagen}
                     alt={raviol.nombre}
@@ -342,7 +342,7 @@ export default function Ravioles() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {raviolon.map((raviol) => (
               <div key={raviol.id} className="pasta-card p-6">
-                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
                   <Image
                     src={raviol.imagen}
                     alt={raviol.nombre}
@@ -436,7 +436,7 @@ export default function Ravioles() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Cocina los Ravioles</h3>
               <p className="text-gray-600">
-                Agrega los ravioles el agua caliente y cocina por 5 minutos hasta el primer hervor.
+                Agrega los ravioles el agua caliente y cocina por {tiempoCoccion} hasta el primer hervor.
               </p>
             </div>
 

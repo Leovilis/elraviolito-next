@@ -5,7 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta seg�
 import UbicacionButton from '../components/UbicacionButton';
 
 export default function Ñoquis() {
-  const tiempoCoccion = "5 min";
+  const tiempoCoccion = "2 min";
   const simple = "$4500";
   const ñoquis = [
     {
@@ -291,7 +291,7 @@ export default function Ñoquis() {
       <section id='whatsapp' className="py-16 bg-tomato text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-script text-4xl md:text-5xl mb-6">
-            Fideos Frescos por Kilo
+            Ñoquis Frescos por Kilo
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Llevate la cantidad que necesites de nuestras pastas

@@ -8,6 +8,7 @@ export default function Sorrentinos() {
   const simple = "$4500";
   const especial = "$4700";
   const esp2 = "$4900";
+  const esp3 = "$5000";
   const sorrentinos = [
     {
       id: 1,
@@ -18,7 +19,7 @@ export default function Sorrentinos() {
       imagen: "/sorrentinos-ricota.jpg",
       ingredientes: [
         "Ricota",
-        "Espinaca",
+        "Acelga Fresca",
         "Especias",
         "Un touch de Sal",
         "Masa Fresca de El Raviolito",
@@ -47,7 +48,7 @@ export default function Sorrentinos() {
       id: 3,
       nombre: "Sorrentinos de Verdura",
       descripcion:
-        "Verduras frescas de estación envueltas en una fima masa de autentico sabor.",
+        "Verduras frescas de estación envueltas en una fina masa de autentico sabor.",
       precio: simple,
       imagen: "/sorrentinos-verdura.jpg",
       ingredientes: [
@@ -79,7 +80,7 @@ export default function Sorrentinos() {
       id: 5,
       nombre: "Sorrentinos de Verdura y Carne",
       descripcion:
-        "Tiernos trozos de pollo con Verdura fresco, una combinación irresistible.",
+        "Acelga fresca combinada con un suave picadillo de carne.",
       precio: simple,
       imagen: "/sorrentinos-carne.jpg",
       ingredientes: [
@@ -102,7 +103,6 @@ export default function Sorrentinos() {
       precio: especial,
       imagen: "/sorrentinos-jamon.jpg",
       ingredientes: [
-        "Acelga Fresca",
         "Jamon Cocido",
         "Queso Cremoso",
         "Especias",
@@ -151,7 +151,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Batata y Queso Azul",
       descripcion:
         "Sorrentinos rellenos con Batata y Queso Azul, una combinación exquisita al paladar.",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-batata.jpg",
       ingredientes: [
         "Batata",
@@ -488,7 +488,7 @@ export default function Sorrentinos() {
                 Cocina los Sorrentinos
               </h3>
               <p className="text-gray-600">
-                Cocina por ${tiempoCoccion} hasta el primer hervor.
+                Cocina por {tiempoCoccion} hasta el primer hervor.
               </p>
             </div>
 

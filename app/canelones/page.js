@@ -14,7 +14,7 @@ export default function Canelones() {
       descripcion: "Canelones rellenos de verduras frescas de estación, una opción saludable y deliciosa.",
       precio: precio,
       imagen: "/canelones-verdura.jpg",
-      ingredientes: ["Acelga", "Espinaca", "Cebolla", "Ricota", "Especias"],
+      ingredientes: ["Acelga", "Ricota", "Especias"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales"
     },
@@ -24,7 +24,7 @@ export default function Canelones() {
       descripcion: "Verduras frescas combinadas con queso cremoso para un sabor equilibrado y nutritivo.",
       precio: precio,
       imagen: "/canelones-verdura-queso.jpg",
-      ingredientes: ["Verduras", "Queso cremoso", "Ricota", "Mozzarella", "Especias"],
+      ingredientes: ["Verduras", "Mozzarella", "Especias"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales"
     },
@@ -34,7 +34,7 @@ export default function Canelones() {
       descripcion: "Mezcla perfecta de verduras frescas con ricota cremosa, suave al paladar.",
       precio: precio,
       imagen: "/canelones-verdura-ricota.jpg",
-      ingredientes: ["Verduras", "Ricota", "Huevo", "Perejil", "Nuez moscada"],
+      ingredientes: ["Verduras", "Ricota", "Nuez moscada"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales"
     },
@@ -44,18 +44,18 @@ export default function Canelones() {
       descripcion: "Verduras combinadas con tierno pollo desmenuzado, una combinación nutritiva y sabrosa.",
       precio: precio,
       imagen: "/canelones-verdura-pollo.jpg",
-      ingredientes: ["Verduras", "Pollo", "Cebolla", "Zanahoria", "Hierbas"],
+      ingredientes: ["Verduras", "Pollo", "Hierbas"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales"
     },
     {
       id: 5,
       nombre: "Canelones de Verdura con Carne",
-      descripcion: "Verduras combinadas con tierno pollo desmenuzado, una combinación nutritiva y sabrosa.",
+      descripcion: "Verduras combinadas con suave picadillo de carne.",
       precio: precio,
       imagen: "/canelones-carne.png",
-      ingredientes: ["Verduras", "Pollo", "Cebolla", "Zanahoria", "Hierbas"],
-      tiempoCoccion: "18-22 min (horno)",
+      ingredientes: ["Verduras", "Picadillo de Carne", "Hierbas"],
+      tiempoCoccion: tiempoCoccion,
       categoria: "Especiales"
     }
   ]

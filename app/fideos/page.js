@@ -5,13 +5,13 @@ import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta seg√
 import UbicacionButton from "../components/UbicacionButton";
 
 export default function Fideos() {
-  const tiempoCoccion = "5 min";
+  const tiempoCoccion = "3 min";
   const tallarines = [
     {
       id: 1,
       nombre: "Tallarines de Huevo",
       descripcion:
-        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+        "Tallarines frescos elaborados con huevos, para una textura perfecta.",
       precio: "$4700",
       imagen: "/tallarines-huevo.jpg",
       ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
@@ -22,21 +22,21 @@ export default function Fideos() {
       id: 2,
       nombre: "Tallarines de Remolacha",
       descripcion:
-        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+        "Tallarines de remolacha fresca, nutritivos y de color vivo.",
       precio: "$4700",
       imagen: "/tallarines-remolacha.jpg",
-      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      ingredientes: ["Harina 0000", "Huevos", "Remolacha Fresca", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
     {
       id: 3,
-      nombre: "Tallarines de Espinaca",
+      nombre: "Tallarines de Verdura",
       descripcion:
-        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+        "Tallarines elaborados con acelga fresca, para un sabor refrescante.",
       precio: "$4700",
       imagen: "/tallarines-espinaca.jpg",
-      ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
+      ingredientes: ["Harina 0000", "Acelga Fresca", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
@@ -44,10 +44,10 @@ export default function Fideos() {
       id: 4,
       nombre: "Tallarines de Zanahoria",
       descripcion:
-        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+        "Tallarines de zanahoria fresca, una mezcla de sabor irresistible.",
       precio: "$4700",
       imagen: "/tallarines-zanahoria.jpg",
-      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      ingredientes: ["Harina 0000", "Zanahoria", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
@@ -55,10 +55,10 @@ export default function Fideos() {
       id: 5,
       nombre: "Tallarines de Harina Morada",
       descripcion:
-        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+        "Tallarines de harina de choclo morado, una combinacion autoctona en tu mesa.",
       precio: "$4700",
       imagen: "/tallarines-morado.jpg",
-      ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
+      ingredientes: ["Harina Morada", "Huevos frescos", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
@@ -66,10 +66,10 @@ export default function Fideos() {
       id: 6,
       nombre: "Tallarines de Morron Ahumado",
       descripcion:
-        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+        "Tallarines de morron ahumado, una sensacion exquisita en tu boca.",
       precio: "$4700",
       imagen: "/tallarines-morron.jpg",
-      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      ingredientes: ["Harina 0000", "Morron Ahumado", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
@@ -77,10 +77,10 @@ export default function Fideos() {
       id: 7,
       nombre: "Tallarines de Perejil",
       descripcion:
-        "Tallarines frescos elaborados con huevos, masa dorada y textura perfecta.",
+        "Tallarines elaborados con perejil fresco, un cl√°sico para vos.",
       precio: "$4700",
       imagen: "/tallarines-perejil.jpg",
-      ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
+      ingredientes: ["Harina 0000", "Perejil Fresco", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
@@ -88,10 +88,10 @@ export default function Fideos() {
       id: 8,
       nombre: "Tallarines de Albahaca",
       descripcion:
-        "Tallarines verdes con espinaca natural, nutritivos y de color vibrante.",
+        "Tallarines elaborados con albahaca fresca, infaltable en tu mesa.",
       precio: "$4700",
       imagen: "/tallarines-albahaca.jpg",
-      ingredientes: ["Harina 0000", "Huevos", "Espinaca", "Aceite", "Sal"],
+      ingredientes: ["Harina 0000", "Albahaca Fresca", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
       tipo: "Especial",
     },
@@ -257,9 +257,9 @@ export default function Fideos() {
                     <span className="text-white font-bold">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">3-5 Minutos</h4>
+                    <h4 className="font-semibold">3 Minutos</h4>
                     <p className="text-gray-600 text-sm">
-                      Cocina por 3-5 minutos, sacalos suavemente en un colador y preparalos como mas te guste.
+                      Cocina por {tiempoCoccion}, sacalos suavemente en un colador y preparalos como mas te guste.
                     </p>
                   </div>
                 </div>
