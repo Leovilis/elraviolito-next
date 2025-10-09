@@ -32,9 +32,7 @@ export default function Contacto() {
               <div>
                 <h3 className="font-semibold text-lg mb-2">Horarios</h3>
                 <div className="text-gray-600 space-y-1">
-                  <p>Lunes a Viernes: 9:00 - 19:00</p>
-                  <p>Sábados: 9:00 - 15:00</p>
-                  <p>Domingos: Cerrado</p>
+                  <p>Todos los dias de 9:00 a 14:00</p>
                 </div>
               </div>
             </div>

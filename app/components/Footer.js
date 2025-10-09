@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, ChefHat } from 'lucide-react'
+import { MapPin, Phone, Clock, ChefHat, Instagram, Facebook } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -31,6 +31,31 @@ export default function Footer() {
             </h3>
             <div className="space-y-2 text-gray-300">
               <p>Todos los dias de 9:00 - 14:00</p>
+            </div>
+          </div>
+
+          {/* Redes Sociales */}
+          <div className="text-center md:text-left">
+            <h3 className="font-semibold text-xl mb-4">Seguinos</h3>
+            <div className="flex justify-center md:justify-start space-x-4">
+              <a
+                href="https://www.instagram.com/_raviolito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:from-purple-700 hover:via-pink-700 hover:to-orange-600 w-12 h-12 md:w-auto md:h-auto md:px-4 md:py-2 md:space-x-2 rounded-lg transition-all duration-300 transform hover:scale-105"
+              >
+                <Instagram className="h-6 w-6 md:h-5 md:w-5" />
+                <span className="hidden md:inline">Instagram</span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100069113483492"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 w-12 h-12 md:w-auto md:h-auto md:px-4 md:py-2 md:space-x-2 rounded-lg transition-all duration-300 transform hover:scale-105"
+              >
+                <Facebook className="h-6 w-6 md:h-5 md:w-5" />
+                <span className="hidden md:inline">Facebook</span>
+              </a>
             </div>
           </div>
         </div>
