@@ -270,7 +270,7 @@ export default function Fideos() {
           {/* Consejos adicionales */}
           <div className="mt-12 bg-gradient-to-r from-cream to-pasta p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">
-              Consejos del Maestra
+              Consejos de la Maestra
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-3">

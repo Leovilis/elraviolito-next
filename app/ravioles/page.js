@@ -126,7 +126,7 @@ export default function Ravioles() {
       nombre: "Ravioles de Batata y Queso Azul",
       descripcion: "Batata fresca combinada con un exquisito Queso Azul, un sabor suave e intenso en el paladar.",
       precio: "$5000",
-      imagen: "/ravioles-4quesos.jpg",
+      imagen: "/ravioles-batata.jpg",
       ingredientes: ["Roquefort", "Batata", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: esp2
