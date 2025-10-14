@@ -6,7 +6,7 @@ import UbicacionButton from '../components/UbicacionButton'
 export default function Ravioles() {
   const simple = "$4500";
   const especial = "$4700";
-  const esp2 = "$4900";
+  const esp2 = "$5000";
   const tiempoCoccion = "3 min"
   const raviolesSimples = [
     {
@@ -93,43 +93,43 @@ export default function Ravioles() {
       id: 8,
       nombre: "Ravioles de Jamón y Queso",
       descripcion: "La combinación perfecta de jamón y queso, ideal para toda la familia.",
-      precio: "$4500",
+      precio: especial,
       imagen: "/ravioles-jamon-queso.jpg",
       ingredientes: ["Jamón cocido", "Queso cremoso", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
-      categoria: especial
+      categoria: "Especial"
 
     },
     {
       id: 9,
       nombre: "Ravioles de Calabaza con Muzza",
       descripcion: "Calabaza dulce con mozzarella, un sabor suave y delicado.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/ravioles-calabaza-muzza.jpg",
       ingredientes: ["Calabaza", "Mozzarella", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
-      categoria: esp2
+      categoria: "Especial"
 
     },
     {
       id: 10,
       nombre: "Ravioles de 4 Quesos",
       descripcion: "Ravioles que combinan el exquisito sabor de 4 quesos, imperdible en tu mesa.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/ravioles-4quesos.jpg",
       ingredientes: ["Roquefort", "Queso Creomoso", "Ricota", "Queso Tybo", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
-      categoria: esp2
+      categoria: "Especial"
     },
     {
       id: 11,
       nombre: "Ravioles de Batata y Queso Azul",
       descripcion: "Batata fresca combinada con un exquisito Queso Azul, un sabor suave e intenso en el paladar.",
-      precio: "$5000",
+      precio: esp2,
       imagen: "/ravioles-batata.jpg",
       ingredientes: ["Roquefort", "Batata", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
-      categoria: esp2
+      categoria: "Esoecial"
     }
   ]
   const raviolon = [
