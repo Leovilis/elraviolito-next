@@ -168,7 +168,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Ricota, Pollo y Almendras Tostadas",
       descripcion:
         "Tiernos trozos de pollo con Ricota fresca y una lluvia de Almendras Tostadas, una combinación única.",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-almendras.jpg",
       ingredientes: [
         "Pollo",
@@ -186,7 +186,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Habas, Queso de Cabra y Choclo",
       descripcion:
         "sorrentinos rellenos de habas tiernas, queso de cabra cremoso y granos dulces de choclo, un plato que respira autenticidad",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-habas.jpg",
       ingredientes: [
         "Queso de Cabra",
@@ -203,7 +203,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos Capresse",
       descripcion:
         "Una masa suave envuelve un relleno vibrante de tomates maduros, queso fresco y hojas de albahaca, armonía perfecta de sabores.",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-capresse.jpg",
       ingredientes: [
         "Tomates",
@@ -220,7 +220,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Calabaza y Mozzarella",
       descripcion:
         "La dulzura natural de la calabaza se fusiona con la suavidad cremosa de la mozzarella, en un plato moderno e innovador.",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-calabaza.jpg",
       ingredientes: [
         "Calabaza",
@@ -237,7 +237,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Quatro Quesos",
       descripcion:
         "Un relleno intenso donde la ricota suave, la mozzarella fundente, el fuerte tybo y el azul vibrante se unen en perfecta armonía en cada bocado.",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-4quesos.jpg",
       ingredientes: [
         "Ricota",
@@ -256,7 +256,7 @@ export default function Sorrentinos() {
       nombre: "Sorrentinos de Humita",
       descripcion:
         "Inspirados en la tradicional humita andina, estos sorrentinos combinan el dulzor del choclo fresco con una crema suave que realza su sabor natural. Un plato que une la esencia ancestral del maíz con la elegancia de la pasta italiana",
-      precio: esp2,
+      precio: esp3,
       imagen: "/sorrentinos-humita.jpg",
       ingredientes: [
         "Choclo molido",
