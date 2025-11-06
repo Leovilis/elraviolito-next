@@ -7,6 +7,7 @@ import UbicacionButton from '../components/UbicacionButton';
 export default function Ñoquis() {
   const tiempoCoccion = "2 min";
   const simple = "$4500";
+  const esp = "$5000";
   const ñoquis = [
     {
       id: 1,
@@ -62,7 +63,7 @@ export default function Ñoquis() {
       id: 6,
       nombre: "Ñoquis Tricolores",
       descripcion: "Ñoquis coloridos, con una mixtura de sabores unica. Una explosion de sabor en tu boca",
-      precio: simple,
+      precio: esp,
       imagen: "/noquis-tricolor.jpg",
       ingredientes: ["Papa", "Espinaca", "Remolacha", "Harina 0000", "Huevo", "Sal"],
       tiempoCoccion: tiempoCoccion,
