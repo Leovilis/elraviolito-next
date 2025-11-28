@@ -6,7 +6,7 @@ import UbicacionButton from '../components/UbicacionButton';
 
 export default function Ñoquis() {
   const tiempoCoccion = "2 min";
-  const simple = "$4500";
+  const simple = "$4000";
   const esp = "$5000";
   const ñoquis = [
     {
