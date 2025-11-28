@@ -44,7 +44,7 @@ export default function BlackFridayBanner() {
               </h3>
               <div className="flex items-center justify-center gap-4">
                 <span className="text-gray-400 text-lg md:text-xl line-through">
-                  $5.500
+                  $4.500
                 </span>
                 <div className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
                   <span className="text-3xl md:text-4xl font-black">
@@ -74,4 +74,5 @@ export default function BlackFridayBanner() {
       </div>
     </Link>
   );
+
 }
