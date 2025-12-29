@@ -63,11 +63,11 @@ export default function NavidadPage() {
       <section className="relative bg-gradient-to-br from-red-700 to-green-700 min-h-[60vh] flex items-center">
         <div className="container mx-auto px-6 text-center">
           <h1 className="font-script text-6xl md:text-8xl text-white mb-6 drop-shadow-lg">
-            Especial Navidad
+            Especial Año Nuevo
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
             Para estas fiestas, El Raviolito les ofrece productos especiales 
-            para hacer de tu mesa navideña un momento inolvidable.
+            para hacer de tu mesa un momento inolvidable.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <WhatsAppButton 
@@ -84,7 +84,7 @@ export default function NavidadPage() {
       {/* Productos Section - Estilo similar a ProductosDestacados.js */}
       <section className="py-20 bg-gradient-to-br from-cream to-pasta">
         <div className="container mx-auto px-6">
-          <h2 className="section-title">Nuestros Productos Navideños</h2>
+          <h2 className="section-title">Nuestros Productos para estas Fiestas</h2>
           <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
             Hacé click en cada producto para consultar precio y disponibilidad por WhatsApp
           </p>
