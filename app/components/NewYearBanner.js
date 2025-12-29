@@ -37,10 +37,10 @@ export default function NewYearBanner() {
             <div className="flex items-center gap-3">
               <div className="text-center transform group-hover:scale-110 transition-transform duration-300">
                 <div className="text-gray-400 text-2xl md:text-3xl font-bold line-through mb-1">
-                  2024
+                  2025
                 </div>
                 <div className="text-yellow-300 text-4xl md:text-5xl font-black animate-bounce">
-                  2025
+                  2026
                 </div>
               </div>
               <PartyPopper className="text-pink-400 animate-pulse" size={50} />
