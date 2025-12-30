@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import NewYearBanner from './components/NewYearBanner'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -21,8 +23,10 @@ export default function RootLayout({ children }) {
         <main>
           {children}
           <GoogleAnalytics gaId="G-EKZ3L5RLSV" />
+          <Analytics />
+          <SpeedInsights />
         </main>
-        <Analytics />
+        
         <Footer />
       </body>
     </html>
