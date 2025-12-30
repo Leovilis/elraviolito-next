@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <NewYearBanner />
         <main>
           {children}
-          <GoogleAnalytics gaId="G-EKZ3L5RLSV" />
+          <GoogleAnalytics gaId="G-JZGKG5HPDK" />
           <Analytics />
           <SpeedInsights />
         </main>
