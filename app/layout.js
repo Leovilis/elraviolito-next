@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import NewYearBanner from './components/NewYearBanner'
+import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <NewYearBanner />
         <main>
           {children}
+          <GoogleAnalytics gaId="G-JZGKG5HPDK" />
         </main>
         <Footer />
       </body>
