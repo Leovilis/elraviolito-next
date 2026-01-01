@@ -36,7 +36,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import NewYearBanner from './components/NewYearBanner'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -161,7 +160,7 @@ export default function RootLayout({ children }) {
         />
         
         <Navbar />
-        <NewYearBanner />
+        
         <main>
           {children}
         </main>
