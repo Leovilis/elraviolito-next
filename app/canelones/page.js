@@ -5,7 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta seg√
 import UbicacionButton from '../components/UbicacionButton';
 
 export default function Canelones() {
-  const precio = "$7000";
+  const precio = "$8000";
   const tiempoCoccion = "15-20 min (horno)"
   const canelones = [
     {
