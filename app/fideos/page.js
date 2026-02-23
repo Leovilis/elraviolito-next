@@ -6,13 +6,14 @@ import UbicacionButton from "../components/UbicacionButton";
 
 export default function Fideos() {
   const tiempoCoccion = "4 min";
+  const precio = "$5500";
   const tallarines = [
     {
       id: 1,
       nombre: "Tallarines de Huevo",
       descripcion:
         "Tallarines frescos elaborados con huevos, para una textura perfecta.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-huevo.jpg",
       ingredientes: ["Harina 0000", "Huevos frescos", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -23,7 +24,7 @@ export default function Fideos() {
       nombre: "Tallarines de Remolacha",
       descripcion:
         "Tallarines de remolacha fresca, nutritivos y de color vivo.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-remolacha.jpg",
       ingredientes: ["Harina 0000", "Huevos", "Remolacha Fresca", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -34,7 +35,7 @@ export default function Fideos() {
       nombre: "Tallarines de Verdura",
       descripcion:
         "Tallarines elaborados con acelga fresca, para un sabor refrescante.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-espinaca.jpg",
       ingredientes: ["Harina 0000", "Acelga Fresca", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -45,7 +46,7 @@ export default function Fideos() {
       nombre: "Tallarines de Zanahoria",
       descripcion:
         "Tallarines de zanahoria fresca, una mezcla de sabor irresistible.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-zanahoria.jpg",
       ingredientes: ["Harina 0000", "Zanahoria", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -56,7 +57,7 @@ export default function Fideos() {
       nombre: "Tallarines de Harina Morada",
       descripcion:
         "Tallarines de harina de choclo morado, una combinacion autoctona en tu mesa.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-morado.jpg",
       ingredientes: ["Harina Morada", "Huevos frescos", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -67,7 +68,7 @@ export default function Fideos() {
       nombre: "Tallarines de Morron Ahumado",
       descripcion:
         "Tallarines de morron ahumado, una sensacion exquisita en tu boca.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-morron.jpg",
       ingredientes: ["Harina 0000", "Morron Ahumado", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -78,7 +79,7 @@ export default function Fideos() {
       nombre: "Tallarines de Perejil",
       descripcion:
         "Tallarines elaborados con perejil fresco, un clásico para vos.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-perejil.jpg",
       ingredientes: ["Harina 0000", "Perejil Fresco", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
@@ -89,7 +90,7 @@ export default function Fideos() {
       nombre: "Tallarines de Albahaca",
       descripcion:
         "Tallarines elaborados con albahaca fresca, infaltable en tu mesa.",
-      precio: "$4700",
+      precio: precio,
       imagen: "/tallarines-albahaca.jpg",
       ingredientes: ["Harina 0000", "Albahaca Fresca", "Aceite", "Sal"],
       tiempoCoccion: tiempoCoccion,
