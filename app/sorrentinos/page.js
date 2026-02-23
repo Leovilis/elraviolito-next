@@ -5,10 +5,10 @@ import WhatsAppButton from "../components/WhatsAppButton"; // Ajusta la ruta seg
 import UbicacionButton from "../components/UbicacionButton";
 export default function Sorrentinos() {
   const tiempoCoccion = "3 min";
-  const simple = "$4500";
-  const especial = "$4700";
-  const esp2 = "$4900";
-  const esp3 = "$5000";
+  const simple = "$5000";
+  const especial = "$5500";
+  const esp2 = "$6000";
+  const esp3 = "$6000";
   const sorrentinos = [
     {
       id: 1,
