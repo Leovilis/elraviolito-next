@@ -4,9 +4,9 @@ import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton' // Ajusta la ruta según tu estructura
 import UbicacionButton from '../components/UbicacionButton'
 export default function Ravioles() {
-  const simple = "$4500";
-  const especial = "$4700";
-  const esp2 = "$5000";
+  const simple = "$5000";
+  const especial = "$5500";
+  const esp2 = "$6000";
   const tiempoCoccion = "3 min"
   const raviolesSimples = [
     {
