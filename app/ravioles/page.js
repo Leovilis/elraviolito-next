@@ -137,7 +137,7 @@ export default function Ravioles() {
       id: 12,
       nombre: "Raviolon de Verdura",
       descripcion: "Raviolon relleno de acelga fresca y especias para un sabor intenso pero agradable. Pre hervido, listo para un toque de horno y a servir",
-      precio: "$9000",
+      precio: "$10000",
       imagen: "/raviolon.png",
       ingredientes: ["Acelga Fresca", "Nuez Moscada", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: "5 min",
