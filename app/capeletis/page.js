@@ -6,9 +6,9 @@ import UbicacionButton from "../components/UbicacionButton";
 
 export default function Capeletis() {
   const tiempoCoccion = "3 min";
-  const simple = "$4500";
-  const especial = "$4700";
-  const esp2 = "$5000";
+  const simple = "$5500";
+  const especial = "$6000";
+  const esp2 = "$7000";
   const capeletisSimples = [
     {
       id: 1,
