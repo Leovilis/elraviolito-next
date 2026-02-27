@@ -41,6 +41,12 @@ export default function ProductosDestacados() {
       imagen: "/noquis-hero.png",
       link: "/noquis",
     },
+    {
+      nombre: "Salsas",
+      descripcion: "Salsas para acompañar las mejores pastas",
+      imagen: "/salsas-hero.png",
+      link: "/salsas",
+    },
   ];
 
   return (

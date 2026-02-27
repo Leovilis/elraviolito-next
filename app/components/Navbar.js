@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: 'Capeletis', href: '/capeletis' },
     { name: 'Tallarines', href: '/fideos' },
     { name: 'Ñoquis', href: '/noquis' },
+    { name: 'Salsas', href: '/salsas' },
     { name: 'Historia', href: '/#historia' },
     { name: 'Contacto', href: '/#contacto' },
   ]
