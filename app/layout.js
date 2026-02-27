@@ -59,7 +59,8 @@ export const metadata = {
     'pastas frescas',
     'el raviolito',
     'comida casera Jujuy',
-    'pastas tradicionales'
+    'pastas tradicionales',
+    'salsas tradicionales',
   ],
   authors: [{ name: 'El Raviolito' }],
   creator: 'El Raviolito',
@@ -83,14 +84,7 @@ export const metadata = {
     ],
   },
   
-  // Twitter Card
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'El Raviolito - Pastas Artesanales',
-  //   description: 'Pastas artesanales desde 1974 en Palpalá, Jujuy',
-  //   images: ['/images/og-image.jpg'], // Cambia esta ruta por tu imagen
-  // },
-  
+   
   // Robots (para que Google indexe tu sitio)
   robots: {
     index: true,
@@ -104,7 +98,7 @@ export const metadata = {
     },
   },
   
-  // Verificación de Google Search Console (agrega tu código cuando lo tengas)
+  // Verificación de Google Search Console
   verification: {
     google: 'IXKl9CGb3p301Vqwyu1GYeZxjnFKFU5VZar9G1LWf4U',
   },

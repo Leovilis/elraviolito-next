@@ -14,7 +14,7 @@ export default function Salsas() {
       imagen: "/salsa-bolognesa.jpg",
       ingredientes: ["Carne picada", "Tomate", "Verduras"],
       categoria: "Clásica",
-      pastaIdeal: "Fideos anchos, canelones"
+      pastaIdeal: "Tallarines, canelones"
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ export default function Salsas() {
       imagen: "/salsa-pollo.jpg",
       ingredientes: ["Pollo", "Crema", "Hierbas"],
       categoria: "Especial",
-      pastaIdeal: "Fettuccine, ravioles"
+      pastaIdeal: "Tallarines, ravioles"
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ export default function Salsas() {
       imagen: "/salsa-puerro.jpg",
       ingredientes: ["Puerro", "Crema", "Manteca"],
       categoria: "Vegetariana",
-      pastaIdeal: "Tallarines, ñoquis"
+      pastaIdeal: "Tallarines, Ñoquis"
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ export default function Salsas() {
       imagen: "/salsa-champignon.jpg",
       ingredientes: ["Champignones", "Ajo", "Crema"],
       categoria: "Especial",
-      pastaIdeal: "Tortellini, fettuccine"
+      pastaIdeal: "Ravioles, Sorrentinos"
     },
     {
       id: 7,
@@ -84,7 +84,7 @@ export default function Salsas() {
       imagen: "/salsa-filetto.jpg",
       ingredientes: ["Tomate", "Albahaca", "Ajo"],
       categoria: "Clásica",
-      pastaIdeal: "Spaghetti, ravioles"
+      pastaIdeal: "Tallarines, ravioles"
     }
   ]
 
@@ -218,9 +218,9 @@ export default function Salsas() {
               <div className="w-20 h-20 bg-tomato rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Cocí las Pastas</h3>
+              <h3 className="text-xl font-semibold mb-3">Cocé las Pastas</h3>
               <p className="text-gray-600">
-                Cocí las pastas en abundante agua con sal hasta que estén al dente.
+                Cocé las pastas en abundante agua con sal hasta que estén al dente.
               </p>
             </div>
 
@@ -252,8 +252,8 @@ export default function Salsas() {
               <div className="space-y-4">
                 <h4 className="font-semibold text-tomato text-lg">Salsas de tomate:</h4>
                 <ul className="text-gray-600 space-y-2">
-                  <li>• Filetto y Rosada → ideales para spaghetti y tallarines</li>
-                  <li>• Bolognesa → perfecta con fideos anchos y canelones</li>
+                  <li>• Filetto y Rosada → ideales para ravioles y tallarines</li>
+                  <li>• Bolognesa → perfecta con tallarines y canelones</li>
                   <li>• Todas combinan muy bien con ñoquis</li>
                   <li>• Acompañá con parmesano rallado</li>
                 </ul>
@@ -262,8 +262,8 @@ export default function Salsas() {
                 <h4 className="font-semibold text-tomato text-lg">Salsas cremosas:</h4>
                 <ul className="text-gray-600 space-y-2">
                   <li>• Bechamel → fundamental para canelones y lasagna</li>
-                  <li>• 4 Quesos y Champignon → para ravioles y tortellini</li>
-                  <li>• Pollo y Puerro → ideales con fettuccine</li>
+                  <li>• 4 Quesos y Champignon → para ravioles y tallarines</li>
+                  <li>• Pollo y Puerro → ideales con todas las pastas</li>
                   <li>• Acompañá con pimienta negra recién molida</li>
                 </ul>
               </div>

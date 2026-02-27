@@ -1,31 +1,34 @@
-import { MapPin, Phone, Clock, ChefHat, Instagram, Facebook } from 'lucide-react'
+import { MapPin, Phone, Clock, Instagram, Facebook } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Información de contacto */}
-          <div>
-            <div className="mb-1">
-              <Image
-                src="/logo.jpg"
-                alt="El Raviolito Logo"
-                width={150}
-                height={75}
-                className="h-32 w-auto"
-              />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          {/* Logo + Contacto */}
+          <div className="flex flex-col gap-3">
+            {/* <Image
+              src="/logo.jpg"
+              alt="El Raviolito Logo"
+              width={150}
+              height={75}
+              className="h-auto w-16"
+            /> */}
+            <div className="flex items-center space-x-2">
+              <h3 className="font-semibold text-xl mb-1 flex items-center space-x-2">
+                <Clock className="h-5 w-5 text-tomato" />
+                <span>Contacto</span>
+              </h3>
             </div>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-tomato" />
-                <span>Saavedra 202 Barrio 9 de julio, Palpalá, Jujuy</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-tomato" />
-                <span>388-4536901</span>
-              </div>
+            <div className="flex items-center space-x-2">
+              <MapPin className="h-5 w-5 text-tomato  shrink-0" />
+              <span className="text-gray-300">Saavedra 202 Barrio 9 de julio, Palpalá, Jujuy</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <Phone className="h-5 w-5 text-tomato shrink-0" />
+              <span className="text-gray-300">388-4536901</span>
             </div>
           </div>
 
@@ -65,6 +68,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
         <div className="border-t border-gray-700 pt-8 mt-8 text-center text-gray-400">
           <p>&copy; 2025 El Raviolito, Palpalá. Todos los derechos reservados.</p>
           <p className="mt-2 font-script text-tomato">Tradición familiar desde 1974</p>

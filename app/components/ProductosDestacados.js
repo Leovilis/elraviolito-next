@@ -49,6 +49,8 @@ export default function ProductosDestacados() {
     },
   ];
 
+  const isOdd = productos.length % 2 !== 0;
+
   return (
     <section
       id="productos"
@@ -57,30 +59,37 @@ export default function ProductosDestacados() {
       <div className="container mx-auto px-6">
         <h2 className="section-title">Nuestros Productos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {productos.map((producto, index) => (
-            <Link
-              key={index}
-              href={producto.link}
-              className="group pasta-card p-6 block"
-            >
-              <div className="relative  md:h-96 mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100">
-                <Image
-                  width={500}
-                  height={500}
-                  src={producto.imagen}
-                  alt={producto.nombre}
-                  className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                {producto.nombre}
-              </h3>
-              <p className="text-gray-600 mb-4">{producto.descripcion}</p>
-              <div className="text-tomato font-semibold group-hover:text-red-700 transition-colors">
-                Ver productos →
-              </div>
-            </Link>
-          ))}
+          {productos.map((producto, index) => {
+            const isLast = index === productos.length - 1;
+            const shouldCenter = isLast && isOdd;
+
+            return (
+              <Link
+                key={index}
+                href={producto.link}
+                className={`group pasta-card p-6 block ${
+                  shouldCenter ? "md:col-span-2 md:w-1/2 md:mx-auto" : ""
+                }`}
+              >
+                <div className="relative md:h-96 mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100">
+                  <Image
+                    width={500}
+                    height={500}
+                    src={producto.imagen}
+                    alt={producto.nombre}
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                  {producto.nombre}
+                </h3>
+                <p className="text-gray-600 mb-4">{producto.descripcion}</p>
+                <div className="text-tomato font-semibold group-hover:text-red-700 transition-colors">
+                  Ver productos →
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
