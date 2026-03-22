@@ -460,7 +460,7 @@ export default function Ravioles() {
             Ravioles Frescos de El Raviolito
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Nuestros ravioles vienen en 2 planchas de 96 unidades cada una, 
+            Nuestros ravioles vienen en 2 planchas de 48 unidades cada una, 
             perfectos para disfrutar en familia.
           </p>
           <div id='whatsapp' className="flex flex-col sm:flex-row gap-4 justify-center">
