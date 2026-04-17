@@ -1,37 +1,3 @@
-// import './globals.css'
-// import { Inter } from 'next/font/google'
-// import Navbar from './components/Navbar'
-// import Footer from './components/Footer'
-// import NewYearBanner from './components/NewYearBanner'
-// import { GoogleAnalytics } from '@next/third-parties/google'
-// import { Analytics } from '@vercel/analytics/react';
-// import { SpeedInsights } from '@vercel/speed-insights/next';
-
-// const inter = Inter({ subsets: ['latin'] })
-
-// export const metadata = {
-//   title: 'El Raviolito - Pastas Caseras',
-//   description: 'Pastas artesanales desde 1974. Tradición familiar en cada plato.',
-// }
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="es">
-//       <body className={inter.className}>
-//         <Navbar />
-//         <NewYearBanner />
-//         <main>
-//           {children}
-//           <GoogleAnalytics gaId="G-JZGKG5HPDK" />
-//           <Analytics />
-//           <SpeedInsights />
-//         </main>
-        
-//         <Footer />
-//       </body>
-//     </html>
-//   )
-// }
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
@@ -39,7 +5,7 @@ import Footer from './components/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import AdSense from './components/AdSense';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -110,7 +76,12 @@ export default function RootLayout({ children }) {
       <head>
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        
+        {/* ✅ Script de Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6129561366428176"
+          crossOrigin="anonymous"
+        />
         {/* Meta tags adicionales para SEO local */}
         <meta name="geo.region" content="AR-Y" />
         <meta name="geo.placename" content="Palpalá, Jujuy" />
