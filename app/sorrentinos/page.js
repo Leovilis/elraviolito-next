@@ -1,274 +1,244 @@
 import { Utensils, Clock, Users, Star, Wheat } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import WhatsAppButton from "../components/WhatsAppButton"; // Ajusta la ruta según tu estructura
+import WhatsAppButton from "../components/WhatsAppButton";
 import UbicacionButton from "../components/UbicacionButton";
+import PrecioDisplay from "../components/PrecioDisplay";
+import { PRECIOS } from "@/data/precios";
+
 export default function Sorrentinos() {
   const tiempoCoccion = "3 min";
-  const simple = "$5000";
-  const especial = "$5500";
-  const esp2 = "$6000";
-  const esp3 = "$6000";
+
+  // Los precios ahora vienen de PRECIOS centralizado
   const sorrentinos = [
     {
       id: 1,
       nombre: "Sorrentinos de Verdura y Ricota",
-      descripcion:
-        "Clásicos sorrentinos rellenos de ricota fresca y espinaca, con masa casera dorada.",
-      precio: simple,
+      descripcion: "Clásicos sorrentinos rellenos de ricota fresca y espinaca, con masa casera dorada.",
       imagen: "/sorrentinos-ricota.jpg",
-      ingredientes: [
-        "Ricota",
-        "Acelga Fresca",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Ricota", "Acelga Fresca", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Simples",
+      tipoPrecio: "simple"
     },
     {
       id: 2,
       nombre: "Sorrentinos de Verdura y Queso",
-      descripcion:
-        "Deliciosos sorrentinos rellenos de Acelga Fresca y Queso, perfectos para toda la familia.",
-      precio: simple,
+      descripcion: "Deliciosos sorrentinos rellenos de Acelga Fresca y Queso, perfectos para toda la familia.",
       imagen: "/sorrentinos-queso.jpg",
-      ingredientes: [
-        "Acelga Fresca",
-        "Queso Cremoso",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Acelga Fresca", "Queso Cremoso", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Simples",
+      tipoPrecio: "simple"
     },
     {
       id: 3,
       nombre: "Sorrentinos de Verdura",
-      descripcion:
-        "Verduras frescas de estación envueltas en una fina masa de autentico sabor.",
-      precio: simple,
+      descripcion: "Verduras frescas de estación envueltas en una fina masa de autentico sabor.",
       imagen: "/sorrentinos-verdura.jpg",
-      ingredientes: [
-        "Acelga",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Acelga", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Simples",
+      tipoPrecio: "simple"
     },
     {
       id: 4,
       nombre: "Sorrentinos de Pollo y Verdura",
-      descripcion:
-        "Tiernos trozos de pollo con Verdura fresco, una combinación irresistible.",
-      precio: simple,
+      descripcion: "Tiernos trozos de pollo con Verdura fresco, una combinación irresistible.",
       imagen: "/sorrentinos-pollo.jpg",
-      ingredientes: [
-        "Pollo",
-        "Verdura",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Pollo", "Verdura", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Simples",
+      tipoPrecio: "simple"
     },
     {
       id: 5,
       nombre: "Sorrentinos de Verdura y Carne",
-      descripcion:
-        "Acelga fresca combinada con un suave picadillo de carne.",
-      precio: simple,
+      descripcion: "Acelga fresca combinada con un suave picadillo de carne.",
       imagen: "/sorrentinos-carne.jpg",
-      ingredientes: [
-        "Acelga Fresca",
-        "Picadillo de Carne",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Acelga Fresca", "Picadillo de Carne", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Simples",
-    },
+      tipoPrecio: "simple"
+    }
   ];
+
   const sorrentinosEspeciales = [
     {
       id: 6,
       nombre: "Sorrentinos de Jamon y Queso",
-      descripcion:
-        "Rellenos de Jamon y Queso, una combinación tan irresistible como tradicional.",
-      precio: especial,
+      descripcion: "Rellenos de Jamon y Queso, una combinación tan irresistible como tradicional.",
       imagen: "/sorrentinos-jamon.jpg",
-      ingredientes: [
-        "Jamon Cocido",
-        "Queso Cremoso",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Jamon Cocido", "Queso Cremoso", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "especial"
     },
     {
       id: 7,
       nombre: "Sorrentinos de Ricota y Jamon",
-      descripcion:
-        "Un irresistible relleno de Ricota fresca y Jamon Cocido, una opción para toda la família.",
-      precio: especial,
+      descripcion: "Un irresistible relleno de Ricota fresca y Jamon Cocido, una opción para toda la família.",
       imagen: "/sorrentinos-rico-jamon.jpg",
-      ingredientes: [
-        "Ricota",
-        "Jamon Cocido",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Ricota", "Jamon Cocido", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "especial"
     },
     {
       id: 8,
       nombre: "Sorrentinos de Ricota y Nuéz",
-      descripcion:
-        "Masa fresca rellena de una ricota suave que se funde con el toque crujiente y elegante de la nuez, una caricia al paladar.",
-      precio: especial,
+      descripcion: "Masa fresca rellena de una ricota suave que se funde con el toque crujiente y elegante de la nuez, una caricia al paladar.",
       imagen: "/sorrentinos-nuez.jpg",
-      ingredientes: [
-        "Ricota Fresca",
-        "Nueces",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Ricota Fresca", "Nueces", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "especial"
     },
     {
       id: 9,
       nombre: "Sorrentinos de Batata y Queso Azul",
-      descripcion:
-        "Sorrentinos rellenos con Batata y Queso Azul, una combinación exquisita al paladar.",
-      precio: esp3,
+      descripcion: "Sorrentinos rellenos con Batata y Queso Azul, una combinación exquisita al paladar.",
       imagen: "/sorrentinos-batata.jpg",
-      ingredientes: [
-        "Batata",
-        "Queso Azul",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Batata", "Queso Azul", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "premium"
     },
     {
       id: 10,
       nombre: "Sorrentinos de Ricota, Pollo y Almendras Tostadas",
-      descripcion:
-        "Tiernos trozos de pollo con Ricota fresca y una lluvia de Almendras Tostadas, una combinación única.",
-      precio: esp3,
+      descripcion: "Tiernos trozos de pollo con Ricota fresca y una lluvia de Almendras Tostadas, una combinación única.",
       imagen: "/sorrentinos-almendras.jpg",
-      ingredientes: [
-        "Pollo",
-        "Ricota Fresca",
-        "Almendras",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Pollo", "Ricota Fresca", "Almendras", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "premium"
     },
     {
       id: 11,
       nombre: "Sorrentinos de Habas, Queso de Cabra y Choclo",
-      descripcion:
-        "sorrentinos rellenos de habas tiernas, queso de cabra cremoso y granos dulces de choclo, un plato que respira autenticidad",
-      precio: esp3,
+      descripcion: "sorrentinos rellenos de habas tiernas, queso de cabra cremoso y granos dulces de choclo, un plato que respira autenticidad",
       imagen: "/sorrentinos-habas.jpg",
-      ingredientes: [
-        "Queso de Cabra",
-        "Choclo",
-        "Habas Frescas",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Queso de Cabra", "Choclo", "Habas Frescas", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "premium"
     },
     {
       id: 12,
       nombre: "Sorrentinos Capresse",
-      descripcion:
-        "Una masa suave envuelve un relleno vibrante de tomates maduros, queso fresco y hojas de albahaca, armonía perfecta de sabores.",
-      precio: esp3,
+      descripcion: "Una masa suave envuelve un relleno vibrante de tomates maduros, queso fresco y hojas de albahaca, armonía perfecta de sabores.",
       imagen: "/sorrentinos-capresse.jpg",
-      ingredientes: [
-        "Tomates",
-        "Queso Mozzarella",
-        "Albahaca",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Tomates", "Queso Mozzarella", "Albahaca", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "premium"
     },
     {
       id: 13,
       nombre: "Sorrentinos de Calabaza y Mozzarella",
-      descripcion:
-        "La dulzura natural de la calabaza se fusiona con la suavidad cremosa de la mozzarella, en un plato moderno e innovador.",
-      precio: esp3,
+      descripcion: "La dulzura natural de la calabaza se fusiona con la suavidad cremosa de la mozzarella, en un plato moderno e innovador.",
       imagen: "/sorrentinos-calabaza.jpg",
-      ingredientes: [
-        "Calabaza",
-        "Mozzarella",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Calabaza", "Mozzarella", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "premium"
     },
     {
       id: 14,
       nombre: "Sorrentinos de Quatro Quesos",
-      descripcion:
-        "Un relleno intenso donde la ricota suave, la mozzarella fundente, el fuerte tybo y el azul vibrante se unen en perfecta armonía en cada bocado.",
-      precio: esp3,
+      descripcion: "Un relleno intenso donde la ricota suave, la mozzarella fundente, el fuerte tybo y el azul vibrante se unen en perfecta armonía en cada bocado.",
       imagen: "/sorrentinos-4quesos.jpg",
-      ingredientes: [
-        "Ricota",
-        "Mozzarella",
-        "Roquefort",
-        "Especias",
-        "Tybo",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Ricota", "Mozzarella", "Roquefort", "Especias", "Tybo", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
+      tipoPrecio: "premium"
     },
     {
       id: 15,
       nombre: "Sorrentinos de Humita",
-      descripcion:
-        "Inspirados en la tradicional humita andina, estos sorrentinos combinan el dulzor del choclo fresco con una crema suave que realza su sabor natural. Un plato que une la esencia ancestral del maíz con la elegancia de la pasta italiana",
-      precio: esp3,
+      descripcion: "Inspirados en la tradicional humita andina, estos sorrentinos combinan el dulzor del choclo fresco con una crema suave que realza su sabor natural. Un plato que une la esencia ancestral del maíz con la elegancia de la pasta italiana",
       imagen: "/sorrentinos-humita.jpg",
-      ingredientes: [
-        "Choclo molido",
-        "Queso Cremoso",
-        "Especias",
-        "Un touch de Sal",
-        "Masa Fresca de El Raviolito",
-      ],
+      ingredientes: ["Choclo molido", "Queso Cremoso", "Especias", "Un touch de Sal", "Masa Fresca de El Raviolito"],
       tiempoCoccion: tiempoCoccion,
       categoria: "Especiales",
-    },
+      tipoPrecio: "premium"
+    }
   ];
+
+  // Componente de tarjeta reutilizable
+  const ProductCard = ({ producto, bgColor = "bg-green-500" }) => {
+    return (
+      <div className="pasta-card p-6">
+        <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
+          <Image
+            src={producto.imagen}
+            alt={producto.nombre}
+            fill
+            className="object-cover hover:scale-105 transition-transform duration-300"
+          />
+          <div className="absolute top-4 right-4">
+            <span className={`${bgColor} text-white px-3 py-1 rounded-full text-sm font-medium`}>
+              {producto.categoria}
+            </span>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <div className="flex justify-between items-start">
+            <h3 className="text-2xl font-bold text-gray-800 flex-1">
+              {producto.nombre}
+            </h3>
+            <div className="flex items-center gap-1 ml-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+
+          <p className="text-gray-600 leading-relaxed">
+            {producto.descripcion}
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">Ingredientes:</h4>
+              <ul className="text-sm text-gray-600 space-y-1">
+                {producto.ingredientes.map((ingrediente, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-herbs rounded-full"></div>
+                    {ingrediente}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4 text-tomato" />
+                <span className="text-sm text-gray-600">
+                  Cocción: {producto.tiempoCoccion}
+                </span>
+              </div>
+
+              <div className="text-right">
+                <PrecioDisplay
+                  producto="sorrentinos"
+                  tipo={producto.tipoPrecio}
+                  showDescription={true}
+                />
+                <Link href="#whatsapp">
+                  <button className="btn-primary w-full sm:w-auto mt-2">
+                    Pedido
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="min-h-screen">
@@ -282,7 +252,7 @@ export default function Sorrentinos() {
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Nuestros sorrentinos son una tradición familiar que se remonta a
               1974. Cada pieza está elaborada artesanalmente con ingredientes
-              frescos y mucho amor. Presentación de 12 unidades que rinden dos porciones. 
+              frescos y mucho amor. {PRECIOS.sorrentinos.descripcion} que rinden dos porciones.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
@@ -302,168 +272,30 @@ export default function Sorrentinos() {
         </div>
       </section>
 
-      {/* Sorrentinos Simple */}
+      {/* Sorrentinos Simples */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
+          <h2 className="section-title">Sorrentinos Simples</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {sorrentinos.map((sorrentino) => (
-              <div key={sorrentino.id} className="pasta-card p-6">
-                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
-                  <Image
-                   
-                    src={sorrentino.imagen}
-                    alt={sorrentino.nombre}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {sorrentino.categoria}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-2xl font-bold text-gray-800 flex-1">
-                      {sorrentino.nombre}
-                    </h3>
-                    <div className="flex items-center gap-1 ml-4">
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 leading-relaxed">
-                    {sorrentino.descripcion}
-                  </p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">
-                        Ingredientes:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        {sorrentino.ingredientes.map((ingrediente, index) => (
-                          <li key={index} className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-herbs rounded-full"></div>
-                            {ingrediente}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-tomato" />
-                        <span className="text-sm text-gray-600">
-                          Cocción: {sorrentino.tiempoCoccion}
-                        </span>
-                      </div>
-
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-tomato mb-2">
-                          {sorrentino.precio}
-                        </div>
-                        <Link href="#whatsapp">
-                          <button className="btn-primary w-full sm:w-auto">
-                            Pedido
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ProductCard key={sorrentino.id} producto={sorrentino} bgColor="bg-green-500" />
             ))}
           </div>
         </div>
       </section>
+
       {/* Sorrentinos Especiales */}
       <section className="py-16 bg-gradient-to-br from-cream to-pasta">
         <div className="container mx-auto px-6">
           <h2 className="section-title">Sorrentinos Especiales</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {sorrentinosEspeciales.map((sorrentinosEspeciales) => (
-              <div key={sorrentinosEspeciales.id} className="pasta-card p-6">
-                <div className="relative h-96 mb-6 rounded-lg overflow-hidden">
-                  <Image
-                    src={sorrentinosEspeciales.imagen}
-                    alt={sorrentinosEspeciales.nombre}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-tomato text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {sorrentinosEspeciales.categoria}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-2xl font-bold text-gray-800 flex-1">
-                      {sorrentinosEspeciales.nombre}
-                    </h3>
-                    <div className="flex items-center gap-1 ml-4">
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 leading-relaxed">
-                    {sorrentinosEspeciales.descripcion}
-                  </p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">
-                        Ingredientes:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        {sorrentinosEspeciales.ingredientes.map(
-                          (ingrediente, index) => (
-                            <li key={index} className="flex items-center gap-2">
-                              <div className="w-2 h-2 bg-herbs rounded-full"></div>
-                              {ingrediente}
-                            </li>
-                          )
-                        )}
-                      </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-tomato" />
-                        <span className="text-sm text-gray-600">
-                          Cocción: {sorrentinosEspeciales.tiempoCoccion}
-                        </span>
-                      </div>
-
-                      <div className="text-right">
-                        <div className="text-lg font-bold text-tomato mb-2">
-                          {sorrentinosEspeciales.precio}
-                        </div>
-                        <Link href="#whatsapp">
-                          <button className="btn-primary w-full sm:w-auto">
-                            Pedido
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {sorrentinosEspeciales.map((sorrentino) => (
+              <ProductCard key={sorrentino.id} producto={sorrentino} bgColor="bg-tomato" />
             ))}
           </div>
         </div>
       </section>
+
       {/* Preparación Section */}
       <section className="py-16 bg-gradient-to-br from-cream to-pasta">
         <div className="container mx-auto px-6">

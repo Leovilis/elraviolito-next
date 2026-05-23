@@ -2,7 +2,8 @@ import { Star, Droplets, Flame, ChefHat, Sparkles } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import WhatsAppButton from '../components/WhatsAppButton'
-import UbicacionButton from '../components/UbicacionButton';
+import UbicacionButton from '../components/UbicacionButton'
+import PrecioDisplay from '../components/PrecioDisplay'
 
 export default function Salsas() {
   const salsas = [
@@ -10,7 +11,7 @@ export default function Salsas() {
       id: 1,
       nombre: "Salsa Bolognesa",
       descripcion: "Clásica salsa italiana de carne con tomate, cocida a fuego lento para concentrar todos sus sabores. Perfecta para tagliatelle y lasagna.",
-      precio: "$5000",
+      salsaKey: "bolognesa",
       imagen: "/salsa-bolognesa.jpg",
       ingredientes: ["Carne picada", "Tomate", "Verduras"],
       categoria: "Clásica",
@@ -20,7 +21,7 @@ export default function Salsas() {
       id: 2,
       nombre: "Salsa Bechamel",
       descripcion: "Suave y cremosa salsa blanca elaborada con leche, manteca y nuez moscada. Base ideal para gratinar y acompañar canelones.",
-      precio: "$4000",
+      salsaKey: "bechamel",
       imagen: "/salsa-bechamel.jpg",
       ingredientes: ["Leche", "Manteca", "Nuez moscada"],
       categoria: "Clásica",
@@ -30,7 +31,7 @@ export default function Salsas() {
       id: 3,
       nombre: "Salsa 4 Quesos",
       descripcion: "Mezcla irresistible de cuatro quesos seleccionados que crean una salsa cremosa y llena de sabor, perfecta para los amantes del queso.",
-      precio: "$6000",
+      salsaKey: "cuatroQuesos",
       imagen: "/salsa-4quesos.jpg",
       ingredientes: ["Mozzarella", "Parmesano", "Roquefort", "Cremoso"],
       categoria: "Especial",
@@ -40,7 +41,7 @@ export default function Salsas() {
       id: 4,
       nombre: "Salsa de Pollo",
       descripcion: "Tiernos trozos de pollo en una salsa cremosa con hierbas aromáticas. Una combinación nutritiva y sabrosa para toda la familia.",
-      precio: "$5000",
+      salsaKey: "pollo",
       imagen: "/salsa-pollo.jpg",
       ingredientes: ["Pollo", "Crema", "Hierbas"],
       categoria: "Especial",
@@ -50,7 +51,7 @@ export default function Salsas() {
       id: 5,
       nombre: "Salsa de Puerro",
       descripcion: "Delicada salsa elaborada con puerros frescos salteados en manteca y crema. Suave, aromática y perfecta para pastas frescas.",
-      precio: "$4500",
+      salsaKey: "puerro",
       imagen: "/salsa-puerro.jpg",
       ingredientes: ["Puerro", "Crema", "Manteca"],
       categoria: "Vegetariana",
@@ -60,7 +61,7 @@ export default function Salsas() {
       id: 6,
       nombre: "Salsa de Champignon",
       descripcion: "Champignones frescos salteados con ajo y hierbas en una base cremosa. Intensa en sabor y perfecta para los amantes de las setas.",
-      precio: "$6000",
+      salsaKey: "champignon",
       imagen: "/salsa-champignon.jpg",
       ingredientes: ["Champignones", "Ajo", "Crema"],
       categoria: "Especial",
@@ -70,7 +71,7 @@ export default function Salsas() {
       id: 7,
       nombre: "Salsa Rosada",
       descripcion: "La combinación perfecta entre salsa de tomate y crema, creando una salsa suave, equilibrada y deliciosamente versátil.",
-      precio: "$4500",
+      salsaKey: "rosada",
       imagen: "/salsa-rosada.jpg",
       ingredientes: ["Tomate", "Crema", "Especias"],
       categoria: "Clásica",
@@ -80,7 +81,7 @@ export default function Salsas() {
       id: 8,
       nombre: "Salsa Filetto",
       descripcion: "Salsa de tomate casera con albahaca fresca y ajo, cocida lentamente para lograr una textura y sabor auténticamente italianos.",
-      precio: "$4000",
+      salsaKey: "filetto",
       imagen: "/salsa-filetto.jpg",
       ingredientes: ["Tomate", "Albahaca", "Ajo"],
       categoria: "Clásica",
@@ -98,7 +99,7 @@ export default function Salsas() {
               Salsas
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Nuestras salsas artesanales son elaboradas a diario con ingredientes frescos, 
+              Nuestras salsas artesanales son elaboradas a diario con ingredientes frescos,
               el complemento perfecto para todas nuestras pastas caseras.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
@@ -146,11 +147,9 @@ export default function Salsas() {
                       {salsa.nombre}
                     </h3>
                     <div className="flex items-center gap-1 ml-4">
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                      <Star className="w-5 h-5 text-yellow-400 fill-current" />
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                      ))}
                     </div>
                   </div>
 
@@ -180,11 +179,12 @@ export default function Salsas() {
                       </div>
 
                       <div className="text-right">
-                        <div className="text-2xl font-bold text-tomato mb-2">
-                          {salsa.precio}
-                        </div>
+                        <PrecioDisplay
+                          salsaKey={salsa.salsaKey}
+                          showDescription={true}
+                        />
                         <Link href="#whatsapp">
-                          <button className="btn-primary w-full sm:w-auto">
+                          <button className="btn-primary w-full sm:w-auto mt-2">
                             Pedido
                           </button>
                         </Link>
@@ -279,7 +279,7 @@ export default function Salsas() {
             El Toque Final que Hace la Diferencia
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Nuestras salsas artesanales son el complemento perfecto para nuestras pastas frescas. 
+            Nuestras salsas artesanales son el complemento perfecto para nuestras pastas frescas.
             Pedí tu salsa favorita junto con tus pastas y creá una comida inolvidable.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
