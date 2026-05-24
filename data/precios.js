@@ -37,7 +37,7 @@ export const PRECIOS = {
 
   // Canelones (12 unidades)
   canelones: {
-    simple: 4000,
+    simple: 9000,
     unidades: 12,
     descripcion: "12 unidades"
   },
