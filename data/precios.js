@@ -12,9 +12,9 @@ export const PRECIOS = {
 
   // Sorrentinos (12 unidades)
   sorrentinos: {
-    simple: 6000,
-    especial: 6500,
-    premium: 7000,
+    simple: 6500,
+    especial: 7000,
+    premium: 8000,
     unidades: 12,
     descripcion: "12 unidades"
   },
@@ -30,7 +30,7 @@ export const PRECIOS = {
 
   // Tallarines (por kilo)
   tallarines: {
-    simple: 6000,
+    simple: 6500,
     porKilo: true,
     descripcion: "Por kilo"
   },
@@ -45,7 +45,7 @@ export const PRECIOS = {
   // Ñoquis (por kilo)
   noquis: {
     simple: 6000,
-    especial: 6500,
+    especial: 6000,
     porKilo: true,
     descripcion: "Por kilo"
   },
