@@ -14,7 +14,7 @@ export const PRECIOS = {
   sorrentinos: {
     simple: 6500,
     especial: 7000,
-    premium: 8000,
+    premium: 7000,
     unidades: 12,
     descripcion: "12 unidades"
   },
@@ -37,7 +37,7 @@ export const PRECIOS = {
 
   // Canelones (12 unidades)
   canelones: {
-    simple: 9000,
+    simple: 8000,
     unidades: 12,
     descripcion: "12 unidades"
   },
