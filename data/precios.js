@@ -30,7 +30,7 @@ export const PRECIOS = {
 
   // Tallarines (por kilo)
   tallarines: {
-    simple: 6500,
+    simple: 7000,
     porKilo: true,
     descripcion: "Por kilo"
   },
