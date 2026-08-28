@@ -3,11 +3,11 @@
 export const PRECIOS = {
   // Pastas base (2 planchas de 96 unidades)
   ravioles: {
-    simple: 6000,
-    especial: 6500,
-    premium: 7000,
-    unidades: 192,
-    descripcion: "2 Planchas (192 unidades)"
+    simple: 6500,
+    especial: 7000,
+    premium: 7500,
+    unidades: 96,
+    descripcion: "2 Planchas (96 unidades)"
   },
 
   // Sorrentinos (12 unidades)
