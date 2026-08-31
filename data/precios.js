@@ -21,11 +21,11 @@ export const PRECIOS = {
 
   // Capeletis (30 unidades)
   capeletis: {
-    simple: 6000,
-    especial: 6500,
-    premium: 7000,
-    unidades: 30,
-    descripcion: "30 unidades"
+    simple: 7600,
+    especial: 8000,
+    premium: 8000,
+    unidades: 35,
+    descripcion: "35 unidades"
   },
 
   // Tallarines (por kilo)
